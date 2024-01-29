@@ -1,19 +1,19 @@
 # Myst 4 Archives
 
-[Geometry1] (myst4/file-reference/geometry/mesh.md)
+[Geometry1](myst4/file-reference/geometry/mesh.md)
 
-[Geometry2] (myst4/file-reference/geometry/)
+[Geometry2](myst4/file-reference/geometry/)
 
-[Geometry3] (/geometry)
-[Geometry4] (geometry/)
+[Geometry3](/geometry)
+[Geometry4](geometry/)
 
-[Geometry5] (geometry/index.md)
+[Geometry5](geometry/index.md)
 
 
 # Archive
 Revelation makes use of .m4b that are really Ubisoft's BigFile Game Data Archive format. 
 
-[From CoderJo] (https://gist.github.com/coderjo/86968bfd3c17e6f7c3ecffd76c3482fa)
+[From CoderJo](https://gist.github.com/coderjo/86968bfd3c17e6f7c3ecffd76c3482fa)
 
 Endian order: little endian
 

@@ -17,10 +17,10 @@ To faithfully recreate Myst 3 Exile and Myst 4 Revelation
 - AI upscaling / AI performance reconstruction
 
 
-[Website] (https://www.tomahnaproject.com/)
-[Github] (https://github.com/TomahnaProject)
+[Website](https://www.tomahnaproject.com/)
+[Github](https://github.com/TomahnaProject)
 
-[Exile] (/myst3/index.md)
-[Revelation] (/myst4/index.md)
+[Exile](/myst3/index.md)
+[Revelation](/myst4/index.md)
 
-[TestLink] (/myst4/file-reference/geometry/mesh.md)
+[TestLink](/myst4/file-reference/geometry/mesh.md)
