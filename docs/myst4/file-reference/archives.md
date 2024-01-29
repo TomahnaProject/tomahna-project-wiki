@@ -1,12 +1,13 @@
 # Myst 4 Archives
 
-[Geometry1] (/myst4/file-reference/geometry/mesh.md)
+[Geometry1] (myst4/file-reference/geometry/mesh.md)
 
-[Geometry2] (/myst4/file-reference/geometry/)
+[Geometry2] (myst4/file-reference/geometry/)
 
-[Geometry3] (/geometry/)
+[Geometry3] (/geometry)
+[Geometry4] (geometry/)
 
-[Geometry4] (/geometry/index.md)
+[Geometry5] (geometry/index.md)
 
 
 # Archive
