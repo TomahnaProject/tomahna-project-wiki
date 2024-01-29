@@ -18,9 +18,13 @@ To faithfully recreate Myst 3 Exile and Myst 4 Revelation
 
 
 [Website](https://www.tomahnaproject.com/)
+
 [Github](https://github.com/TomahnaProject)
 
-[Exile](/myst3/index.md)
-[Revelation](/myst4/index.md)
 
-[TestLink](/myst4/file-reference/geometry/mesh.md)
+[Exile](./myst3/)
+
+[Revelation](./myst4/)
+
+
+[TestLink](./myst4/file-reference/geometry/mesh.md)
