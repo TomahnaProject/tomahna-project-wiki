@@ -15,5 +15,3 @@ To faithfully recreate Myst 3 Exile and Myst 4 Revelation
 - Scripts for photogrammetry / node alignment
 - Blender Python script for importing nodes
 - AI upscaling / AI performance reconstruction
-
-This site is built with MkDocs. For full documentation visit [mkdocs.org](https://www.mkdocs.org).

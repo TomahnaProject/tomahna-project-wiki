@@ -1,4 +1,4 @@
-# Myst 4 File Reference
+# Myst 4 Archives
 
 [Geometry1] (/myst4/file-reference/geometry/index.md)
 [Geometry2] (/myst4/file-reference/geometry/)
