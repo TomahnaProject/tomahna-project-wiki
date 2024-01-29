@@ -1,6 +1,9 @@
 # Myst 4 File Reference
 
-[Geometry] (geometry.md)
+[Geometry1] (/myst4/file-reference/geometry/index.md)
+[Geometry2] (/myst4/file-reference/geometry/)
+[Geometry3] (/geometry/)
+[Geometry4] (/geometry/index.md)
 
 
 # Archive
