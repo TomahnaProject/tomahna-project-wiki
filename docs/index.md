@@ -1,6 +1,6 @@
 # Tomahna Project Home
 
-
+[Test Link To page 2](page2.md)
 
 ## Editing The Wiki
 The source for this wiki is contained in the [tomahna-project-wiki repository](https://github.com/TomahnaProject/tomahna-project-wiki) tomahna-project-wiki repository.
