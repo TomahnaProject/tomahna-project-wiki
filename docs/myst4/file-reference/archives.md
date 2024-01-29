@@ -1,6 +1,6 @@
 # Myst 4 Archives
 
-[Geometry](./myst4/file-reference/geometry/mesh.md)
+[Geometry](./file-reference/geometry/mesh.md)
 
 # Archive
 Revelation makes use of .m4b that are really Ubisoft's BigFile Game Data Archive format. 
