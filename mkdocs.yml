@@ -1,4 +1,9 @@
 site_name: Tomahna Project Wiki
+nav: 
+  - 'Project': '/project/index.md'
+  - 'Exile': '/myst3/index.md'
+  - 'Revelation': '/myst4/index.md'
+
 theme:
   name: material
   features:
