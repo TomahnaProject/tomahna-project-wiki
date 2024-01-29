@@ -1,6 +1,10 @@
-# Tomahna Project Home
+# Home
 
-[Test Link To page 2](page2.md)
+[Exile](myst3.md)
+[Revelation](myst4.md)
+
+[M3 File Reference](myst3/file-reference.md)
+[M4 File Reference](myst4/file-reference.md)
 
 ## Editing The Wiki
 The source for this wiki is contained in the [tomahna-project-wiki repository](https://github.com/TomahnaProject/tomahna-project-wiki) tomahna-project-wiki repository.
