@@ -53,4 +53,5 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
 copyright: |
-  &copy; 2024 <a href="https://github.com/tomahnaproject"  target="_blank" rel="noopener">Tomahna Project</a>
+  &copy; 2024 <a href="https://github.com/tomahnaproject"  target="_blank" rel="noopener">Tomahna Project</a> - 
+  If you need to edit this wiki, please go to the <a href="https://github.com/TomahnaProject/tomahna-project-wiki"  target="_blank" rel="noopener">tomahna-project-wiki</a> repository.
