@@ -4,11 +4,12 @@ The music in Myst4 is similar to Myst3 in that it uses sequencing to compose man
 
 # Sequence Files
 
-Each music track / cue has a sequence file (.seq) located within the sequence file located within the main sound.m4b archive.
+Each music track / cue has a sequence file (.seq) located within the sequence folder located within the main sound.m4b archive.
 The game shipped with 48 files of these files (assuming no variation between versions).
 
 :warning: **This page is a WIP**: Do not use it as gospel reference 
 
+[Useful Hex Editor designed for Reverse Engineering](https://web.imhex.werwolv.net/)
 [Useful Hex Conversion Tool](https://www.scadacore.com/tools/programming-calculators/online-hex-converter/)
 
 Endian order: unknown - likely little endian
@@ -28,12 +29,12 @@ Endian order: unknown - likely little endian
 | char   |  snl  | Sequence name |
 | bool   |  0x1  | unknown |
 | int32  |  0x1  | unknown |
-| int32  |  0x1  | unknown - length of prefix for two |
-| float  |  0x1  | unknown - two |
-| int32  |  0x1  | unknown - length of prefix for three|
-| int32  |  0x1  | unknown - three |
-| int32  |  0x1  | unknown - length of prefix for four |
-| float  |  0x1  | unknown - four |
+| int32  |  0x1  | UbiDataType prefix string length (dpl1) |
+| float  |  dpl1 | UbiDataType prefix string - one |
+| int32  |  0x1  | UbiDataType prefix string length (dpl2) |
+| int32  |  dpl2 | UbiDataType prefix string - two |
+| int32  |  0x1  | UbiDataType prefix string length (dpl3) |
+| float  |  dpl3 | UbiDataType prefix string - three |
 
 
 **FAMILY Structure**
