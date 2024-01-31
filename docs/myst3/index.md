@@ -1,2 +1,3 @@
 # Exile
-[File Reference](./file-reference/)
+
+[File Reference](./file-reference/index.md)

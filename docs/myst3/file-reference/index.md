@@ -1,5 +1,6 @@
-# Myst 3 File Reference
+# Exile File Reference
 
 ## Install Files
+
 - .m3a
 - .m3s

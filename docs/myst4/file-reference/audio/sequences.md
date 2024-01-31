@@ -5,8 +5,9 @@ The music in Myst4 is similar to Myst3 in that it uses sequencing to compose man
 Each music track / cue is defined in a sequence file (.seq) located within the sequence folder located within the main sound.m4b archive.
 The game shipped with 48 files of these files (assuming no variation between versions).
 
-# Sequence Files
-:warning: **This page is a WIP**: Do not use it as gospel reference 
+## Sequence Files
+
+:warning: **This page is a WIP**: Do not use it as gospel reference!
 
 [Useful Hex Editor designed for Reverse Engineering](https://web.imhex.werwolv.net/)
 
@@ -14,15 +15,14 @@ The game shipped with 48 files of these files (assuming no variation between ver
 
 Endian order: unknown - likely little endian
 
-**FILE HEADER**
+### FILE HEADER
 
 |  Type  | Count | Description |
 | :----- | ----: | :---------- |
 | char   |  0x8  | Header string "ubi/b0-l" |
 | uint32 |  0x1  | unknown - family count? |
 
-
-**SEQUENCE Structure**
+#### SEQUENCE Structure
 
 |  Type  | Count | Description |
 | :----- | ----: | :---------- |
@@ -39,8 +39,7 @@ Endian order: unknown - likely little endian
 | int32  |  0x1  | UbiDataType prefix string length (dpl3) |
 | float  |  dpl3 | UbiDataType prefix string - three |
 
-
-**FAMILY Structure**
+#### FAMILY Structure
 
 |  Type  | Count | Description |
 | :----- | ----: | :---------- |
@@ -48,7 +47,7 @@ Endian order: unknown - likely little endian
 | char   |  ??   | Family name |
 | int32  |  0x1  | unknown |
 
-list of sound names, each preceded by 4 bytes
+List of sound names, each preceded by 4 bytes
 
 |  Type  | Count | Description |
 | :----- | ----: | :---------- |
@@ -56,7 +55,7 @@ list of sound names, each preceded by 4 bytes
 | char   |       | Sequence name |
 | char   |       | Sequence name |
 
-**SOUND Structure**
+#### SOUND Structure
 
 |  Type  | Count | Description |
 | :----- | ----: | :---------- |

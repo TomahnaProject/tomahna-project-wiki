@@ -16,7 +16,6 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
 
-
 ## Code Annotation Examples
 
 ### Codeblocks
@@ -74,7 +73,7 @@ def bubble_sort(items):
 
 ## Icons and Emojs
 
-:smile: 
+:smile:
 
 :fontawesome-regular-face-laugh-wink:
 
