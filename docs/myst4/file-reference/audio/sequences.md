@@ -1,15 +1,15 @@
 # Music Sequencing
 
-The music in Myst4 is similar to Myst3 in that it uses sequencing to create music cues that offer more variety for a long period of time compared to a fixed piece of music looped endlessly.
+The music in Myst4 is similar to Myst3 in that it uses sequencing to compose many separate sound files dynamically into music so that the game can offer more variety when listening to the same piece for a long period of time compared to a fixed piece of music looped endlessly.
 
 # Sequence Files
 
-Each music track / cue has a sequence file (.seq) located in the main sound.m4b in the sequence folder.
+Each music track / cue has a sequence file (.seq) located within the sequence file located within the main sound.m4b archive.
 The game shipped with 48 files of these files (assuming no variation between versions).
 
-:warning: **This page is a WIP**: Do not use it as gosspel reference 
+:warning: **This page is a WIP**: Do not use it as gospel reference 
 
-[useful tool](https://www.scadacore.com/tools/programming-calculators/online-hex-converter/)
+[Useful Hex Conversion Tool](https://www.scadacore.com/tools/programming-calculators/online-hex-converter/)
 
 Endian order: unknown - likely little endian
 
@@ -18,7 +18,7 @@ Endian order: unknown - likely little endian
 |  Type  | Count | Description |
 | :----- | ----: | :---------- |
 | char   |  0x8  | Header string "ubi/b0-l" |
-| uint32 |  0x1  | unknown - family count? | 4
+| uint32 |  0x1  | unknown - family count? |
 
 
 **SEQUENCE Structure**
@@ -41,7 +41,8 @@ Endian order: unknown - likely little endian
 | char   |  ??   | Family name |
 | int32  |  0x1  | unknown |
 
-// list of sound names, each preceded by 4 bytes
+list of sound names, each preceded by 4 bytes
+
 | int32  |  0x1  | unknown |
 | char   |       | Sequence name |
 | char   |       | Sequence name |
@@ -56,7 +57,7 @@ Endian order: unknown - likely little endian
 | bool   |  0x1  | Flag |
 | int32  |  0x1  | unknown  |
 
-// 4 bytes??
+4 bytes??
 
 | float  |  0x1  | unknown |
 | float  |  0x1  | unknown |
