@@ -1,4 +1,4 @@
-# Myst 4 Archives
+# M4B Archives
 
 [Geometry](./file-reference/geometry/mesh.md)
 
