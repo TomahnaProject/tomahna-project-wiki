@@ -39,7 +39,7 @@ Sometimes referred to as `vec3`.
 
 ## `Vector4`
 
-Sometimes referred to as `vec4`.
+Sometimes referred to as `vec4` or `quat`.
 
 | Name | Type | Count | Description |
 | :-- | :-- | --: | --- |
@@ -71,10 +71,6 @@ Sometimes referred to as `vec4`.
 | y | [`Vector4`](#vector4) | `0x1` |  |
 | z | [`Vector4`](#vector4) | `0x1` |  |
 | w | [`Vector4`](#vector4) | `0x1` |  |
-
-## `Quaternion`
-
-TODO
 
 ## `Array<T>`
 
