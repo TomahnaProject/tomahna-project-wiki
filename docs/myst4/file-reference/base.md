@@ -1,6 +1,6 @@
 # Base types
 
-## `BasicString`
+## `BasicString` structure
 
 The basic UTF-16 string used all over the place. Sometimes referred to as `ubistring`.
 
@@ -9,16 +9,16 @@ The basic UTF-16 string used all over the place. Sometimes referred to as `ubist
 | len | `uint32` | Length of the string. |
 | s | `char[len]` | The string. |
 
-## `BasicWString`
+## `BasicWString` structure
 
-Same as [`BasicString`](#basicstring), except with UTF-16 encoding.
+Same as [`BasicString`](#basicstring-structure), except with UTF-16 encoding.
 
 | Name | Type | Description |
 | :-- | --: | --- |
 | len | `uint32` | Length of the string. |
 | s | `wchar_t[len]` | The string. |
 
-## `Vector2`
+## `Vector2` structure
 
 Sometimes referred to as `vec2`.
 
@@ -27,7 +27,7 @@ Sometimes referred to as `vec2`.
 | x | `float` |  |
 | y | `float` |  |
 
-## `Vector3`
+## `Vector3` structure
 
 Sometimes referred to as `vec3`.
 
@@ -37,7 +37,7 @@ Sometimes referred to as `vec3`.
 | y | `float` |  |
 | z | `float` |  |
 
-## `Vector4`
+## `Vector4` structure
 
 Sometimes referred to as `vec4` or `quat`.
 
@@ -48,45 +48,45 @@ Sometimes referred to as `vec4` or `quat`.
 | z | `float` |  |
 | w | `float` |  |
 
-## `Matrix22`
+## `Matrix22` structure
 
 | Name | Type | Description |
 | :-- | --: | --- |
-| x | [`Vector2`](#vector2) |  |
-| y | [`Vector2`](#vector2) |  |
+| x | [`Vector2`](#vector2-structure) |  |
+| y | [`Vector2`](#vector2-structure) |  |
 
-## `Matrix33`
-
-| Name | Type | Description |
-| :-- | --: | --- |
-| x | [`Vector3`](#vector3) |  |
-| y | [`Vector3`](#vector3) |  |
-| z | [`Vector3`](#vector3) |  |
-
-## `Matrix44`
+## `Matrix33` structure
 
 | Name | Type | Description |
 | :-- | --: | --- |
-| x | [`Vector4`](#vector4) |  |
-| y | [`Vector4`](#vector4) |  |
-| z | [`Vector4`](#vector4) |  |
-| w | [`Vector4`](#vector4) |  |
+| x | [`Vector3`](#vector3-structure) |  |
+| y | [`Vector3`](#vector3-structure) |  |
+| z | [`Vector3`](#vector3-structure) |  |
 
-## `Array<T>`
+## `Matrix44` structure
+
+| Name | Type | Description |
+| :-- | --: | --- |
+| x | [`Vector4`](#vector4-structure) |  |
+| y | [`Vector4`](#vector4-structure) |  |
+| z | [`Vector4`](#vector4-structure) |  |
+| w | [`Vector4`](#vector4-structure) |  |
+
+## `Array`<`T`> structure
 
 | Name | Type | Description |
 | :-- | --: | --- |
 | len | `uint32` | Length of the array. |
 | elements | `T[len]` | Elements of the array. |
 
-## `PairArray<K, V>`
+## `PairArray`<`K`, `V`> structure
 
 | Name | Type | Description |
 | :-- | --: | --- |
 | len | `uint32` | Length of the array. |
-| elements | [`Pair<K, V>[len]`](#pairk-v) | Elements of the array. |
+| elements | [`Pair`](#pairk-v-structure)<`K`, `V`>`[len]` | Elements of the array. |
 
-### `Pair<K, V>`
+### `Pair`<`K`, `V`> structure
 
 | Name | Type | Description |
 | :-- | --: | --- |
