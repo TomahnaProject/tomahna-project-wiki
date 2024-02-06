@@ -1,6 +1,15 @@
 site_name: Tomahna Project Wiki
+site_url: "https://tomahnaproject.github.io/tomahna-project-wiki"
+repo_url: "https://github.com/TomahnaProject/tomahna-project-wiki"
+repo_name: TomahnaProject/tomahna-project-wiki
+copyright: |
+  &copy; 2024 <a href="https://github.com/tomahnaproject"  target="_blank" rel="noopener">Tomahna Project</a> - 
+  If you wish to edit this wiki, please go to the <a href="https://github.com/TomahnaProject/tomahna-project-wiki"  target="_blank" rel="noopener">tomahna-project-wiki</a> repository.
+
 theme:
   name: material
+  icon:
+    repo: fontawesome/brands/github
   features:
     - navigation.tabs
     - navigation.sections
@@ -11,6 +20,7 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - content.action.edit
   language: en
   palette:
     - scheme: slate 
@@ -35,6 +45,8 @@ theme:
 #    - icon: fontawesome/brands/linkedin
 #      link: https://www.linkedin.com/in/willettjames/
 
+strict: true
+
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -49,9 +61,8 @@ markdown_extensions:
   - pymdownx.mark
   - attr_list
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-copyright: |
-  &copy; 2024 <a href="https://github.com/tomahnaproject"  target="_blank" rel="noopener">Tomahna Project</a> - 
-  If you need to edit this wiki, please go to the <a href="https://github.com/TomahnaProject/tomahna-project-wiki"  target="_blank" rel="noopener">tomahna-project-wiki</a> repository.
+plugins:
+  - git-revision-date-localized
