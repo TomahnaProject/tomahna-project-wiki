@@ -10,10 +10,10 @@ BigFiles are little-endian, and have the .m4b file extension.
 
 | Name | Type | Description |
 | :-- | --: | --- |
-| magic | [`BasicString`](./base.md#basicstring-structure) | BigFile magic signature. Must be "UBI_BF_SIG\0". |
-| version | `uint32` | Must be `1`. No other version is known. |
+| magic | [`BasicString`](./base.md#basicstring-structure) | Magic signature. Must be "UBI_BF_SIG\0". |
+| ver | `uint32` | Version. Must be `1`. No other version is known. |
 | root | [`FatDirectory`](#fatdirectory-structure) | Root directory entry. `root.name` must be empty. |
-| fileTable | ... | Table of files described in `root`. |
+| fileTbl | ... | Table of files described in `root`. |
 
 ## `FatDirectory` structure
 
@@ -24,7 +24,7 @@ Describes a single directory contained in a BigFile.
 | name | [`BasicString`](./base.md#basicstring-structure) | Directory name. In source material, all directory names have a redundant null-terminator if not empty. |
 | nSubDirs | `uint8` | Number of sub-directories. |
 | subDirs | [`FatDirectory`](#fatdirectory-structure)`[nSubDirs]` | Sub-directories. |
-| files | [`Array`](./base.md#arrayt-structure)<[`FatFile`](#fatfile-structure)> |  |
+| files | [`Array`](./base.md#arrayt-structure)<[`FatFile`](#fatfile-structure)> | Files. |
 
 ## `FatFile` structure
 
