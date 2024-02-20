@@ -2,7 +2,7 @@
 
 ## `FileMagic` string
 
-With some exceptions, all asset files have a `FileMagic` at the start of the file. It can be one of "ubi/b0-l" and "ubi/b0-b", which indicate whether the file is little- or big-endian respectively. However, only "ubi/b0-l" has ever been found in the wild.
+With some exceptions, all asset files have a `FileMagic` at the start of the file. It can be one of `"ubi/b0-l"` and `"ubi/b0-b"`, which indicate whether the file is little- or big-endian respectively. However, only `"ubi/b0-l"` has ever been observed in the wild.
 
 ## `BasicString` structure
 
