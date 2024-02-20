@@ -2,7 +2,7 @@
 
 ## `FileMagic` string
 
-With some exceptions, all asset files have a `FileMagic` at the start of the file. It can be one of `"ubi/b0-l"` and `"ubi/b0-b"`, which indicate whether the file is little- or big-endian respectively. However, only `"ubi/b0-l"` has ever been observed in the wild.
+With some exceptions, all asset files have a `FileMagic` at the start of the file. It can be one of `"ubi/b0-l"` and `"ubi/b0-b"`, which indicate whether the file is little- or big-endian respectively. However, only `"ubi/b0-l"`, the little-endian variant, has ever been observed in the wild.
 
 ## `BasicString` structure
 
@@ -21,6 +21,15 @@ Same as [`BasicString`](#basicstring-structure), except with UTF-16 encoding.
 | :-- | --: | --- |
 | len | `uint32` | Length of the string. |
 | s | `wchar_t[len]` | The string. |
+
+## `EncryptedString` structure
+
+Same as [`BasicString`](#basicstring-structure), except all `char`s are "swizzled". That is to say, for every byte `b` of `s`, apply `(b & 0xAA) >> 1 | (b & 0x55) << 1` to (un)swizzle.
+
+| Name | Type | Description |
+| :-- | --: | --- |
+| len | `uint32` | Length of the string. |
+| s | `char[len]` | The string. |
 
 ## `Vector2` structure
 
