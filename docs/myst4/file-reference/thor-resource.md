@@ -98,4 +98,4 @@ A `ThorResourceHeader` is the base info for a `thor` resource.
 | Name | Type | Description |
 | :-- | --: | --- |
 | ver | `uint32` | Version, indicating which revision of a particular resource type this asset was compiled as. Though there are resource types with multiple versions, none are known to check for the version, always assuming the latest version. Unlike [`ubi` resource](./ubi-resource.md) file versions, this version field pertains to just the associated individual resource. |
-| name | [`BasicString`](./base.md#basicstring-structure) | Name. For non-embedded resources, this will be the filename without extension. |
+| name | [`EncryptedString`](./base.md#encryptedstring-structure) | Name. For non-embedded resources, this will be the filename without extension. |
