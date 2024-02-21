@@ -59,7 +59,7 @@ Type: `uint32`
 | `Subtitle` | `0x24` | TODO |
 | `TextResource` | `0x25` | TODO |
 | `Text` | `0x26` | TODO |
-| `TextureResource` | `0x27` | TODO |
+| [`TextureResource`](./textureresource.md) | `0x27` |  |
 | `VariableResource` | `0x28` | TODO |
 | `Video` | `0x29` | TODO |
 | `WaterResource` | `0x2A` | TODO |
