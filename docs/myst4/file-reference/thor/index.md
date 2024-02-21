@@ -29,7 +29,7 @@ Type: `uint32`
 | `AiResource` | `0x1` | TODO |
 | `AtlasNodeResource` | `0x2` | TODO |
 | `BlenderResource` | `0x3` | TODO |
-| `CommandBlock` | `0x6` | TODO |
+| [`CommandBlock`](./commandblock.md) | `0x6` |  |
 | `ContainerResource` | `0x7` | TODO |
 | `Context` | `0x8` | TODO |
 | `CursorResource` | `0x9` | TODO |
