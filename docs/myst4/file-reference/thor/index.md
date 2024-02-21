@@ -6,17 +6,17 @@
 
 | Name | Type | Description |
 | :-- | --: | --- |
-| magic | [`FileMagic`](./base.md#filemagic-string) | Magic signature. |
+| magic | [`FileMagic`](../base.md#filemagic-string) | Magic signature. |
 | res | [`ThorResource`](#thorresource-structure) | Resource. |
 
 ## `ThorResource` structure
 
-| Name | Value | Description |
+| Name | Type | Description |
 | :-- | --: | --- |
 | type | [`ThorResourceType`](#thorresourcetype-enum) | Type. |
 | data | ... | Data according to `type`. |
 
-## `ThorResourceType` enum
+### `ThorResourceType` enum
 
 A `ThorResourceType` identifies the type of `thor` resource that follows immediately after it.
 
@@ -87,9 +87,9 @@ Type: `uint32`
 | `QualityDatabaseResource` | `0x41` | TODO |
 | `ShadowMaterialResource` | `0x42` | TODO |
 
-## `ThorResourceHeader` structure
+### `ThorResourceHeader` structure
 
-A `ThorResourceHeader` is the base info for a `thor` resource.
+A `ThorResourceHeader` contains the base info for a `thor` resource.
 
 !!! note inline end
 
@@ -97,5 +97,5 @@ A `ThorResourceHeader` is the base info for a `thor` resource.
 
 | Name | Type | Description |
 | :-- | --: | --- |
-| ver | `uint32` | Version, indicating which revision of a particular resource type this asset was compiled as. Though there are resource types with multiple versions, none are known to check for the version, always assuming the latest version. Unlike [`ubi` resource](./ubi-resource.md) file versions, this version field pertains to just the associated individual resource. |
-| name | [`EncryptedString`](./base.md#encryptedstring-structure) | Name. For non-embedded resources, this will be the filename without extension. |
+| ver | `uint32` | Version, indicating which revision of a particular resource type this resource was compiled as. Though there are resource types with multiple versions, none are known to check for the version, always assuming the latest version. Unlike [`ubi` resource](../ubi-resource.md) file versions, this version field pertains to just the associated individual resource. |
+| name | [`EncryptedString`](../base.md#encryptedstring-structure) | Name. For non-embedded resources, this will be the filename without extension. |
