@@ -56,7 +56,7 @@ Type: `uint32`
 | `RailResource` | `0x1F` | TODO |
 | `SkyReflectionResource` | `0x21` | TODO |
 | `SoundLoader` | `0x23` | TODO |
-| `Subtitle` | `0x24` | TODO |
+| [`Subtitle`](./subtitle.md) | `0x24` |  |
 | `TextResource` | `0x25` | TODO |
 | `Text` | `0x26` | TODO |
 | [`TextureResource`](./textureresource.md) | `0x27` |  |
