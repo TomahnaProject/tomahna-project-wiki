@@ -30,7 +30,7 @@ Type: `uint32`
 | `AtlasNodeResource` | `0x2` | TODO |
 | `BlenderResource` | `0x3` | TODO |
 | [`CommandBlock`](./commandblock.md) | `0x6` |  |
-| `ContainerResource` | `0x7` | TODO |
+| [`ContainerResource`](./containerresource.md) | `0x7` |  |
 | `Context` | `0x8` | TODO |
 | `CursorResource` | `0x9` | TODO |
 | `FlareResource` | `0xA` | TODO |
