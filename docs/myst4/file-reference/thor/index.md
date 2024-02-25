@@ -60,7 +60,7 @@ Type: `uint32`
 | [`TextResource`](./textresource.md) | `0x25` |  |
 | [`Text`](./text.md) | `0x26` | * |
 | [`TextureResource`](./textureresource.md) | `0x27` |  |
-| `VariableResource` | `0x28` |  |
+| [`VariableResource`](./variableresource.md) | `0x28` |  |
 | `Video` | `0x29` |  |
 | `WaterResource` | `0x2A` |  |
 | `InteractiveOffsetProvider` | `0x2B` |  |
