@@ -23,7 +23,7 @@ Describes a single directory contained in a BigFile.
 | :-- | --: | --- |
 | name | [`BasicString`](./base.md#basicstring-structure) | Directory name. In source material, all non-empty directory names have a redundant null-terminator. |
 | nSubDirs | `uint8` | Number of sub-directories. |
-| subDirs | [`FatDirectory`](#fatdirectory-structure)`[nSubDirs]` | Sub-directories. |
+| subDirs | [`FatDirectory`](#fatdirectory-structure)\[`nSubDirs`\] | Sub-directories. |
 | files | [`Array`](./base.md#arrayt-structure)<[`FatFile`](#fatfile-structure)> | Files. |
 
 ## `FatFile` structure

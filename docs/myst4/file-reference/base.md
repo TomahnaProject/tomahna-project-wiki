@@ -11,7 +11,7 @@ The basic UTF-16 string used all over the place. Sometimes referred to as `ubist
 | Name | Type | Description |
 | :-- | --: | --- |
 | len | `uint32` | Length of the string. |
-| s | `char[len]` | The string. |
+| s | `char`\[`len`\] | The string. |
 
 ## `BasicWString` structure
 
@@ -20,7 +20,7 @@ Same as [`BasicString`](#basicstring-structure), except with UTF-16 encoding.
 | Name | Type | Description |
 | :-- | --: | --- |
 | len | `uint32` | Length of the string. |
-| s | `wchar_t[len]` | The string. |
+| s | `wchar_t`\[`len`\] | The string. |
 
 ## `EncryptedString` structure
 
@@ -29,7 +29,7 @@ Same as [`BasicString`](#basicstring-structure), except all `char`s are "swizzle
 | Name | Type | Description |
 | :-- | --: | --- |
 | len | `uint32` | Length of the string. |
-| s | `char[len]` | The string. |
+| s | `char`\[`len`\] | The string. |
 
 ## `Vector2` structure
 
@@ -90,14 +90,14 @@ Sometimes referred to as `vec4` or `quat`.
 | Name | Type | Description |
 | :-- | --: | --- |
 | len | `uint32` | Length of the array. |
-| elements | `T[len]` | Elements of the array. |
+| elements | `T`\[`len`\] | Elements of the array. |
 
 ## `PairArray`<`K`, `V`> structure
 
 | Name | Type | Description |
 | :-- | --: | --- |
 | len | `uint32` | Length of the array. |
-| elements | [`Pair`](#pairk-v-structure)<`K`, `V`>`[len]` | Elements of the array. |
+| elements | [`Pair`](#pairk-v-structure)<`K`, `V`>\[`len`\] | Elements of the array. |
 
 ### `Pair`<`K`, `V`> structure
 
