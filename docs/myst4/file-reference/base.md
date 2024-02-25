@@ -37,8 +37,8 @@ Sometimes referred to as `vec2`.
 
 | Name | Type | Description |
 | :-- | --: | --- |
-| x | `float` |  |
-| y | `float` |  |
+| x | `float32` |  |
+| y | `float32` |  |
 
 ## `Vector3` structure
 
@@ -46,9 +46,9 @@ Sometimes referred to as `vec3`.
 
 | Name | Type | Description |
 | :-- | --: | --- |
-| x | `float` |  |
-| y | `float` |  |
-| z | `float` |  |
+| x | `float32` |  |
+| y | `float32` |  |
+| z | `float32` |  |
 
 ## `Vector4` structure
 
@@ -56,10 +56,10 @@ Sometimes referred to as `vec4` or `quat`.
 
 | Name | Type | Description |
 | :-- | --: | --- |
-| x | `float` |  |
-| y | `float` |  |
-| z | `float` |  |
-| w | `float` |  |
+| x | `float32` |  |
+| y | `float32` |  |
+| z | `float32` |  |
+| w | `float32` |  |
 
 ## `Matrix22` structure
 
