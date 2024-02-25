@@ -57,7 +57,7 @@ Type: `uint32`
 | `SkyReflectionResource` | `0x21` |  |
 | `SoundLoader` | `0x23` |  |
 | [`Subtitle`](./subtitle.md) | `0x24` |  |
-| `TextResource` | `0x25` |  |
+| [`TextResource`](./textresource.md) | `0x25` |  |
 | [`Text`](./text.md) | `0x26` | * |
 | [`TextureResource`](./textureresource.md) | `0x27` |  |
 | `VariableResource` | `0x28` |  |
