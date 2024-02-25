@@ -4,6 +4,8 @@ A `TextureBox` describes a single-layer texture box.
 
 [`ThorResourceType`](./index.md#thorresourcetype-enum): `0xF`
 
+Max. version: `0x5`
+
 ## `TextureBox` structure
 
 | Name | Type | Description |

@@ -4,6 +4,8 @@ A `TextureResource` contains a single texture image, or a reference to one if it
 
 [`ThorResourceType`](./index.md#thorresourcetype-enum): `0x27`
 
+Max. version: `0x2`
+
 ## `TextureResource` structure
 
 | Name | Type | Condition | Description |

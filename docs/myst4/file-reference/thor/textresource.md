@@ -4,6 +4,8 @@ A `TextResource` contains a collection of [`Text`](./text.md#text) resources, po
 
 [`ThorResourceType`](./index.md#thorresourcetype-enum): `0x25`
 
+Max. version: `0x1`
+
 ## `TextResource` structure
 
 | Name | Type | Description |

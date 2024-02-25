@@ -4,6 +4,8 @@ A `CommandBlock` contains commands to be executed upon some AI event.
 
 [`ThorResourceType`](./index.md#thorresourcetype-enum): `0x6`
 
+Max. version: `0x1`
+
 ## `CommandBlock` structure
 
 | Name | Type | Description |
