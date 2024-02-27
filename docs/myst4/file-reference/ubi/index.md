@@ -4,7 +4,7 @@
 
 | Name | Type | Description |
 | :-- | --: | --- |
-| magic | [`FileMagic`](./base.md#filemagic-string) | Magic signature. |
+| magic | [`FileMagic`](../base.md#filemagic-string) | Magic signature. |
 | ver | `uint32` | Global version. Individual resource types can have different binary contents depending on this version. |
 | res | [`UbiResource`](#ubiresource-structure) | Resource. |
 
@@ -15,13 +15,13 @@
 | type | [`UbiResourceType`](#ubiresourcetype-string) | Type. |
 | data | ... | Data according to `type`. |
 
-## `UbiResourceType` string
+### `UbiResourceType` string
 
 An `UbiResourceType` identifies the type of `ubi` resource that follows immediately after it.
 
 This string value table might not be complete!
 
-Type: [`BasicString`](./base.md#basicstring-structure)
+Type: [`BasicString`](../base.md#basicstring-structure)
 
 | Value | Description |
 | :-- | --- |

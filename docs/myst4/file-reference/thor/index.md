@@ -93,5 +93,5 @@ A `ThorResourceHeader` contains the base info for a `thor` resource.
 
 | Name | Type | Description |
 | :-- | --: | --- |
-| ver | `uint32` | Version, indicating which revision of a particular resource type this resource was compiled as. Though there are resource types with multiple versions, Revelation's code appears to ignore this field, always assuming the latest version; some resource headers do _not_ list the latest version. Unlike [`ubi` resource](../ubi-resource.md) file versions, this version field pertains to just the associated individual resource. |
+| ver | `uint32` | Version, indicating which revision of a particular resource type this resource was compiled as. Though there are resource types with multiple versions, Revelation's code appears to ignore this field, always assuming the latest version; some resource headers do _not_ list the latest version. Unlike [`ubi` resource](../ubi/index.md) file versions, this version field pertains to just the associated individual resource. |
 | name | [`EncryptedString`](../base.md#encryptedstring-structure) | Name. For non-embedded resources, this will be the filename without extension. |
