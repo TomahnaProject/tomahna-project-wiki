@@ -11,7 +11,7 @@ Max. version: `0x1`
 | Name | Type | Description |
 | :-- | --: | --- |
 | hdr | [`ThorResourceHeader`](./index.md#thorresourceheader-structure) | Header. |
-| hotspotResName | [`EncryptedString`](../base.md#encryptedstring-structure) | Name of the [`GeometryResource`](./geometryresource.md) which describes the interactable hotspot for this rail. |
+| hotspotResName | [`EncryptedString`](../base.md#encryptedstring-structure) | Name of the [`GeometryResource`](./geometryresource.md) which describes the draggable hotspot for this rail. |
 | initialVertex | `uint16` |  |
 | directionType | [`DirectionType`](#directiontype-enum) |  |
 | sensitivity | `float32` |  |
@@ -26,9 +26,9 @@ Max. version: `0x1`
 
 | Name | Value |
 | :-- | --: |
-| Forward | `0x0` |
-| Backward | `0x1` |
-| Bidirectional | `0x2` |
+| `Forward` | `0x0` |
+| `Backward` | `0x1` |
+| `Bidirectional` | `0x2` |
 
 ### `RailVertex` structure
 
