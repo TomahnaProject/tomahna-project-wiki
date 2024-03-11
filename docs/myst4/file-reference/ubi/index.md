@@ -44,8 +44,8 @@ Type: [`BasicString`](../base.md#basicstring-structure)
 | `"ares::RenderTask"` |
 | [`"ares::Matrix"`](./ares-matrix.md) |
 | [`"ares::RenderState"`](./ares-renderstate.md) |
-| `"ares::Texture"` |
-| `"ares::TextureFrame"` |
+| [`"ares::Texture"`](./ares-texture.md) |
+| [`"ares::TextureFrame"`](./ares-texture.md) |
 | `"ares::CameraOrthogonal"` |
 | `"ares::CameraPerspective"` |
 | `"ares::RenderMethod"` |
