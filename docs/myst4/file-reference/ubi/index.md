@@ -30,7 +30,7 @@ Type: [`BasicString`](../base.md#basicstring-structure)
 | [`"ares::ArrayVertexNormal"`](./ares-arrayvertexnormal.md) |  |
 | [`"ares::ArrayVertexColor"`](./ares-arrayvertexcolor.md) |  |
 | [`"ares::ArrayVertexTexCoord"`](./ares-arrayvertextexcoord.md) |  |
-| `"ares::ArrayVertexBlendingIndex"` | TODO |
+| [`"ares::ArrayVertexBlendingIndex"`](./ares-arrayvertexblendingindex.md) |  |
 | `"ares::ArrayVertexBlendingWeight"` | TODO |
 | `"ares::UserArray"` | TODO |
 | `"ares::SkinningParameters"` | TODO |
