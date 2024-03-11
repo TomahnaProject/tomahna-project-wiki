@@ -43,7 +43,7 @@ Type: [`BasicString`](../base.md#basicstring-structure)
 | `"ares::InterleavedPrimitive"` |
 | `"ares::RenderTask"` |
 | [`"ares::Matrix"`](./ares-matrix.md) |
-| `"ares::RenderState"` |
+| [`"ares::RenderState"`](./ares-renderstate.md) |
 | `"ares::Texture"` |
 | `"ares::TextureFrame"` |
 | `"ares::CameraOrthogonal"` |
