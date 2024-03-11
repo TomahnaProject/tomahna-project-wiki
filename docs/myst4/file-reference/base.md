@@ -85,6 +85,15 @@ Sometimes referred to as `vec4` or `quat`.
 | z | [`Vector4`](#vector4-structure) |  |
 | w | [`Vector4`](#vector4-structure) |  |
 
+## `Color` structure
+
+| Name | Type | Description |
+| :-- | --: | --- |
+| r | `float32` | Red. |
+| g | `float32` | Green. |
+| b | `float32` | Blue. |
+| a | `float32` | Alpha. |
+
 ## `Array`<`T`> structure
 
 | Name | Type | Description |
