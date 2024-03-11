@@ -8,4 +8,4 @@ The purpose of the `ares::RenderState` is a mystery, as it contains no relevant 
 
 | Name | Type | Condition | Description |
 | :-- | --: | :-- | --- |
-| name | [`BasicString`](../base.md#basicstring-structure) | `ver >= 5` | Instance name. |
+| name | [`BasicString`](../base.md#basicstring-structure) | `ver >= 0x5` | Instance name. |
