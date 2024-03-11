@@ -42,7 +42,7 @@ Type: [`BasicString`](../base.md#basicstring-structure)
 | `"ares::SpriteList2D"` | TODO |
 | `"ares::InterleavedPrimitive"` | TODO |
 | `"ares::RenderTask"` | TODO |
-| `"ares::Matrix"` | TODO |
+| [`"ares::Matrix"`](./ares-matrix.md) |  |
 | `"ares::RenderState"` | TODO |
 | `"ares::Texture"` | TODO |
 | `"ares::TextureFrame"` | TODO |
