@@ -25,7 +25,7 @@ Type: [`BasicString`](../base.md#basicstring-structure)
 
 | Value | Description |
 | :-- | --- |
-| `"ares::ArrayVertexIndex"` | TODO |
+| [`"ares::ArrayVertexIndex"`](./ares-arrayvertexindex.md) |  |
 | `"ares::ArrayVertexPos"` | TODO |
 | `"ares::ArrayVertexNormal"` | TODO |
 | `"ares::ArrayVertexColor"` | TODO |
