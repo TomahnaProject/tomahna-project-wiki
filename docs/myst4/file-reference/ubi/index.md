@@ -32,6 +32,7 @@ Type: [`BasicString`](../base.md#basicstring-structure)
 | `"ares::ArrayVertexTexCoord"` | TODO |
 | `"ares::ArrayVertexBlendingIndex"` | TODO |
 | `"ares::ArrayVertexBlendingWeight"` | TODO |
+| `"ares::UserArray"` | TODO |
 | `"ares::SkinningParameters"` | TODO |
 | `"ares::IndexedTriangleStrip"` | TODO |
 | `"ares::IndexedTriangleList"` | TODO |
