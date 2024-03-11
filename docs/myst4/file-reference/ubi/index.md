@@ -29,7 +29,7 @@ Type: [`BasicString`](../base.md#basicstring-structure)
 | [`"ares::ArrayVertexPos"`](./ares-arrayvertexpos.md) |  |
 | [`"ares::ArrayVertexNormal"`](./ares-arrayvertexnormal.md) |  |
 | [`"ares::ArrayVertexColor"`](./ares-arrayvertexcolor.md) |  |
-| `"ares::ArrayVertexTexCoord"` | TODO |
+| [`"ares::ArrayVertexTexCoord"`](./ares-arrayvertextexcoord.md) |  |
 | `"ares::ArrayVertexBlendingIndex"` | TODO |
 | `"ares::ArrayVertexBlendingWeight"` | TODO |
 | `"ares::UserArray"` | TODO |
