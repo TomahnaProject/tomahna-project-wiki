@@ -31,7 +31,7 @@ Type: [`BasicString`](../base.md#basicstring-structure)
 | [`"ares::ArrayVertexColor"`](./ares-arrayvertexcolor.md) |  |
 | [`"ares::ArrayVertexTexCoord"`](./ares-arrayvertextexcoord.md) |  |
 | [`"ares::ArrayVertexBlendingIndex"`](./ares-arrayvertexblendingindex.md) |  |
-| `"ares::ArrayVertexBlendingWeight"` | TODO |
+| [`"ares::ArrayVertexBlendingWeight"`](./ares-arrayvertexblendingweight.md) |  |
 | `"ares::UserArray"` | TODO |
 | `"ares::SkinningParameters"` | TODO |
 | `"ares::IndexedTriangleStrip"` | TODO |
