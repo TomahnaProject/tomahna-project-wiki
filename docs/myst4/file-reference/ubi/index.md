@@ -46,8 +46,8 @@ Type: [`BasicString`](../base.md#basicstring-structure)
 | [`"ares::RenderState"`](./ares-renderstate.md) |
 | [`"ares::Texture"`](./ares-texture.md) |
 | [`"ares::TextureFrame"`](./ares-texture.md) |
-| `"ares::CameraOrthogonal"` |
-| `"ares::CameraPerspective"` |
+| [`"ares::CameraOrthogonal"`](./ares-camera.md#arescameraorthogonal) |
+| [`"ares::CameraPerspective"`](./ares-camera.md#arescameraperspective) |
 | `"ares::RenderMethod"` |
 | `"ares::Effect"` |
 | `"ares::Light"` |
