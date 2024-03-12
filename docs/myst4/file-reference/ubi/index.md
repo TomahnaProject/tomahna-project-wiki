@@ -52,7 +52,7 @@ Type: [`BasicString`](../base.md#basicstring-structure)
 | `"ares::Effect"` |
 | `"ares::Light"` |
 | `"ares::ExternalDataContainer"` |
-| `"ares_tools::Font"` |
+| [`"ares_tools::Font"`](./arestools-font.md) |
 | `"astra_renderer::ParticleSystemExternalData"` |
 | `"astra_renderer::RendererNodeAres"` |
 | `"atlas::CameraOrthogonal"` |
