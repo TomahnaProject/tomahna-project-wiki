@@ -68,3 +68,6 @@ plugins:
   - search
   - git-revision-date-localized:
       enabled: !ENV [CI, false]
+  - htmlproofer: # TODO: Remove once Mkdocs releases https://github.com/mkdocs/mkdocs/pull/3463
+      validate_external_urls: false
+      skip_downloads: true

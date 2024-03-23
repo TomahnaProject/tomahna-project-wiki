@@ -12,7 +12,7 @@ This wiki makes use of [MkDocs](https://www.mkdocs.org/). When editing the wiki,
 
 This requires [Python](https://www.python.org/downloads/). Run the following command to install all required dependencies:
 
-`pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin`
+`pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin mkdocs-htmlproofer-plugin`
 
 Running `mkdocs serve` starts up a server at 127.0.0.1:8000 with the docs site. Use this for testing.
 
