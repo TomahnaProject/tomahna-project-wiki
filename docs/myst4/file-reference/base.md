@@ -50,9 +50,9 @@ Sometimes referred to as `vec3`.
 | y | `float32` |  |
 | z | `float32` |  |
 
-## `Vector4` structure
+## `Vector4` / `Quaternion` structure
 
-Sometimes referred to as `vec4` or `quat`.
+Sometimes referred to as `vec4` or `quat` respectively.
 
 | Name | Type | Description |
 | :-- | --: | --- |
@@ -80,10 +80,10 @@ Sometimes referred to as `vec4` or `quat`.
 
 | Name | Type | Description |
 | :-- | --: | --- |
-| x | [`Vector4`](#vector4-structure) |  |
-| y | [`Vector4`](#vector4-structure) |  |
-| z | [`Vector4`](#vector4-structure) |  |
-| w | [`Vector4`](#vector4-structure) |  |
+| x | [`Vector4`](#vector4-quaternion-structure) |  |
+| y | [`Vector4`](#vector4-quaternion-structure) |  |
+| z | [`Vector4`](#vector4-quaternion-structure) |  |
+| w | [`Vector4`](#vector4-quaternion-structure) |  |
 
 ## `Color` structure
 
