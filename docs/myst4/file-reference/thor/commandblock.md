@@ -11,4 +11,4 @@ Max. version: `0x1`
 | Name | Type | Description |
 | :-- | --: | --- |
 | hdr | [`ThorResourceHeader`](./index.md#thorresourceheader-structure) | Header. |
-| cmds | [`Array`](../base.md#arrayt-structure)<[`EncryptedString`](../base.md#encryptedstring-structure)> | Commands. |
+| cmds | [`Array`](../base.md#array-structure)<[`EncryptedString`](../base.md#encryptedstring-structure)> | Commands. |

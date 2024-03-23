@@ -20,4 +20,4 @@ Max. version: `0x2`
 | Name | Type | Description |
 | :-- | --: | --- |
 | format | [`EncryptedString`](../base.md#encryptedstring-structure) | Format of `data`. Never observed to be anything other than "png". |
-| data | [`Array`](../base.md#arrayt-structure)<`uint8`> | Data. |
+| data | [`Array`](../base.md#array-structure)<`uint8`> | Data. |

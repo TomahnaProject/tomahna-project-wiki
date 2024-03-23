@@ -19,12 +19,12 @@ Max. version: `0x5`
 | zExponent | `float32` |  |
 | isLayerMask | `bool` |  |
 | layerIndex | `uint32` |  |
-| components | [`Array`](../base.md#arrayt-structure)<[`EncryptedString`](../base.md#encryptedstring-structure)> |  |
-| states | [`Array`](../base.md#arrayt-structure)<[`StateDesc`](#statedesc-structure)> |  |
+| components | [`Array`](../base.md#array-structure)<[`EncryptedString`](../base.md#encryptedstring-structure)> |  |
+| states | [`Array`](../base.md#array-structure)<[`StateDesc`](#statedesc-structure)> |  |
 
 ### `StateDesc` structure
 
 | Name | Type | Description |
 | :-- | --: | --- |
 | ??? | `uint32` |  |
-| ??? | [`Array`](../base.md#arrayt-structure)<[`EncryptedString`](../base.md#encryptedstring-structure)> |  |
+| ??? | [`Array`](../base.md#array-structure)<[`EncryptedString`](../base.md#encryptedstring-structure)> |  |

@@ -17,4 +17,4 @@ It is unknown what the distinction is between `ares::Texture` and `ares::Texture
 | transparencyType | `uint32` |  |  |
 | formatHint | `uint32` | `ver >= 0xA` |  |
 | nFiles | `uint8` |  |  |
-| textureFile | [`Array`](../base.md#arrayt-structure)<`uint8`> |  | Texture file. |
+| textureFile | [`Array`](../base.md#array-structure)<`uint8`> |  | Texture file. |

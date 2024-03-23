@@ -20,7 +20,7 @@ Max. version: `0x1`
 | isCyclic | `bool` | Indicates whether the first and last rail segments connect back to each other, i.e. whether the hotspot can be dragged past the last rail segment to the first (and/or vice versa). |
 | orientationX | `float32` |  |
 | orientationZ | `float32` |  |
-| vertices | [`Array`](../base.md#arrayt-structure)<[`RailVertex`](#railvertex-structure)> | Vertices of the rail's cubic Bézier curve. If `!isCyclic`, `vertices[0].in` and `vertices[vertices.len-1].out` are ignored. |
+| vertices | [`Array`](../base.md#array-structure)<[`RailVertex`](#railvertex-structure)> | Vertices of the rail's cubic Bézier curve. If `!isCyclic`, `vertices[0].in` and `vertices[vertices.len-1].out` are ignored. |
 
 ### `DirectionType` enum
 

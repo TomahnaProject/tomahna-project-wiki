@@ -11,4 +11,4 @@ Max. version: `0x1`
 | Name | Type | Description |
 | :-- | --: | --- |
 | hdr | [`ThorResourceHeader`](./index.md#thorresourceheader-structure) | Header. |
-| children | [`Array`](../base.md#arrayt-structure)<[`ThorResource`](./index.md#thorresource-structure)> | Children. |
+| children | [`Array`](../base.md#array-structure)<[`ThorResource`](./index.md#thorresource-structure)> | Children. |

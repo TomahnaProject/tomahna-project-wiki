@@ -94,21 +94,21 @@ Sometimes referred to as `vec4` or `quat` respectively.
 | b | `float32` | Blue. |
 | a | `float32` | Alpha. |
 
-## `Array`<`T`> structure
+## `Array`<`T`> structure {#array-structure}
 
 | Name | Type | Description |
 | :-- | --: | --- |
 | len | `uint32` | Length of the array. |
 | elements | `T`\[`len`\] | Elements of the array. |
 
-## `PairArray`<`K`, `V`> structure
+## `PairArray`<`K`, `V`> structure {#pairarray-structure}
 
 | Name | Type | Description |
 | :-- | --: | --- |
 | len | `uint32` | Length of the array. |
-| elements | [`Pair`](#pairk-v-structure)<`K`, `V`>\[`len`\] | Elements of the array. |
+| elements | [`Pair`](#pair-structure)<`K`, `V`>\[`len`\] | Elements of the array. |
 
-### `Pair`<`K`, `V`> structure
+### `Pair`<`K`, `V`> structure {#pair-structure}
 
 | Name | Type | Description |
 | :-- | --: | --- |
