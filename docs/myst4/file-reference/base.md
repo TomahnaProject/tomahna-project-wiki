@@ -114,3 +114,43 @@ Sometimes referred to as `vec4` or `quat` respectively.
 | :-- | --: | --- |
 | k | `K` | Key. |
 | v | `V` | Value. |
+
+## `CompressedQuaternion3U16` structure
+
+| Name | Type | Description |
+| :-- | --: | --- |
+| x | `uint16` |  |
+| y | `uint16` |  |
+| z | `uint16` |  |
+
+Compression/decompression:
+
+```c++
+void CompressedQuaternion3U16::Compress(Quaternion *src) {
+    if (src->w < 0.0) {
+        this->x = (ushort)((1.0 - src->x) * 32767.0);
+        this->y = (ushort)((1.0 - src->y) * 32767.0);
+        this->z = (ushort)((1.0 - src->z) * 32767.0);
+    } else {
+        this->x = (ushort)((1.0 + src->x) * 32767.0);
+        this->y = (ushort)((1.0 + src->y) * 32767.0);
+        this->z = (ushort)((1.0 + src->z) * 32767.0);
+    }
+    return;
+}
+
+void CompressedQuaternion3U16::Decompress(Quaternion *dst) {
+    float w;
+
+    dst->x = (float32)this->x*(1.0/32767.0) - 1.0;
+    dst->y = (float32)this->y*(1.0/32767.0) - 1.0;
+    dst->z = (float32)this->z*(1.0/32767.0) - 1.0;
+    w = ((1.0 - dst->x*dst->x) - dst->y*dst->y) - dst->z*dst->z;
+    if (w > 0.0) {
+        dst->w = sqrt(w);
+    } else {
+        dst->w = 0.0;
+    }
+    return;
+}
+```
