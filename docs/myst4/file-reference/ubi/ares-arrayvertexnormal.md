@@ -1,8 +1,8 @@
 # `ares::ArrayVertexNormal`
 
-TODO
+- [`UbiResourceType`](./index.md#ubiresourcetype-string): `"ares::ArrayVertexNormal"`
 
-[`UbiResourceType`](./index.md#ubiresourcetype-string): `"ares::ArrayVertexNormal"`
+TODO
 
 ## `ares::ArrayVertexNormal` structure
 

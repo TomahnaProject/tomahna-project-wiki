@@ -1,10 +1,9 @@
 # `RailResource`
 
+- [`ThorResourceType`](./index.md#thorresourcetype-enum): `0x1F`
+- Max. version: `0x1`
+
 A `RailResource` describes a rail along which a hotspot can be dragged.
-
-[`ThorResourceType`](./index.md#thorresourcetype-enum): `0x1F`
-
-Max. version: `0x1`
 
 ## `RailResource` structure
 

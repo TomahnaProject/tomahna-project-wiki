@@ -1,8 +1,8 @@
 # `ares::ArrayVertexBlendingIndex`
 
-TODO
+- [`UbiResourceType`](./index.md#ubiresourcetype-string): `"ares::ArrayVertexBlendingIndex"`
 
-[`UbiResourceType`](./index.md#ubiresourcetype-string): `"ares::ArrayVertexBlendingIndex"`
+TODO
 
 ## `ares::ArrayVertexBlendingIndex` structure
 

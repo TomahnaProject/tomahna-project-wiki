@@ -1,8 +1,8 @@
 # `ares::ArrayVertexPos`
 
-TODO
+- [`UbiResourceType`](./index.md#ubiresourcetype-string): `"ares::ArrayVertexPos"`
 
-[`UbiResourceType`](./index.md#ubiresourcetype-string): `"ares::ArrayVertexPos"`
+TODO
 
 ## `ares::ArrayVertexPos` structure
 

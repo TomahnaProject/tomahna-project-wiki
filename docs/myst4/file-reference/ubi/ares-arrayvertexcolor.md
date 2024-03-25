@@ -1,8 +1,8 @@
 # `ares::ArrayVertexColor`
 
-TODO
+- [`UbiResourceType`](./index.md#ubiresourcetype-string): `"ares::ArrayVertexColor"`
 
-[`UbiResourceType`](./index.md#ubiresourcetype-string): `"ares::ArrayVertexColor"`
+TODO
 
 ## `ares::ArrayVertexColor` structure
 

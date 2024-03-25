@@ -1,10 +1,9 @@
 # `Video`
 
+- [`ThorResourceType`](./index.md#thorresourcetype-enum): `0x29`
+- Max. version: `0x5`
+
 A `Video` describes the properties and location of a Bink (`.bik`) video file.
-
-[`ThorResourceType`](./index.md#thorresourcetype-enum): `0x29`
-
-Max. version: `0x5`
 
 ## `Video` structure
 

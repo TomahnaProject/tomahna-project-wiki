@@ -1,8 +1,8 @@
 # `ares::ArrayVertexTexCoord`
 
-TODO
+- [`UbiResourceType`](./index.md#ubiresourcetype-string): `"ares::ArrayVertexTexCoord"`
 
-[`UbiResourceType`](./index.md#ubiresourcetype-string): `"ares::ArrayVertexTexCoord"`
+TODO
 
 ## `ares::ArrayVertexTexCoord` structure
 

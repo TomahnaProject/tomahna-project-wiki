@@ -1,8 +1,8 @@
 # `ares::ArrayVertexBlendingWeight`
 
-TODO
+- [`UbiResourceType`](./index.md#ubiresourcetype-string): `"ares::ArrayVertexBlendingWeight"`
 
-[`UbiResourceType`](./index.md#ubiresourcetype-string): `"ares::ArrayVertexBlendingWeight"`
+TODO
 
 ## `ares::ArrayVertexBlendingWeight` structure
 

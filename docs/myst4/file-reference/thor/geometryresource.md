@@ -1,10 +1,9 @@
 # `GeometryResource`
 
+- [`ThorResourceType`](./index.md#thorresourcetype-enum): `0xC`
+- Max. version: `0x2`
+
 TODO
-
-[`ThorResourceType`](./index.md#thorresourcetype-enum): `0xC`
-
-Max. version: `0x2`
 
 ## `GeometryResource` structure
 

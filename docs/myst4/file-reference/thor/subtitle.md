@@ -1,10 +1,9 @@
 # `Subtitle`
 
+- [`ThorResourceType`](./index.md#thorresourcetype-enum): `0x24`
+- Max. version: `0x1`
+
 A `Subtitle` contains localised subtitles to accompany speech samples.
-
-[`ThorResourceType`](./index.md#thorresourcetype-enum): `0x24`
-
-Max. version: `0x1`
 
 ## `Subtitle` structure
 

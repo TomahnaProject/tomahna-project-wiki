@@ -1,10 +1,10 @@
 # `ares::Texture`
 
+- [`UbiResourceType`](./index.md#ubiresourcetype-string): `"ares::Texture"` and `"ares::TextureFrame"`
+
 An `ares::Texture` contains a texture and some relevant parsing information.
 
 It is unknown what the distinction is between `ares::Texture` and `ares::TextureFrame`; they share the same serialization routine.
-
-[`UbiResourceType`](./index.md#ubiresourcetype-string): `"ares::Texture"` and `"ares::TextureFrame"`
 
 ## `ares::Texture` structure
 

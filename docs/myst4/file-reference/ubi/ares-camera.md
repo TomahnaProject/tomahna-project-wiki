@@ -23,9 +23,9 @@
 
 ## `ares::CameraOrthogonal`
 
-TODO
+- [`UbiResourceType`](./index.md#ubiresourcetype-string): `"ares::CameraOrthogonal"`
 
-[`UbiResourceType`](./index.md#ubiresourcetype-string): `"ares::CameraOrthogonal"`
+TODO
 
 ### `ares::CameraOrthogonal` structure
 
@@ -37,9 +37,9 @@ TODO
 
 ## `ares::CameraPerspective`
 
-TODO
+- [`UbiResourceType`](./index.md#ubiresourcetype-string): `"ares::CameraOrthogonal"`
 
-[`UbiResourceType`](./index.md#ubiresourcetype-string): `"ares::CameraOrthogonal"`
+TODO
 
 ### `ares::CameraPerspective` structure
 

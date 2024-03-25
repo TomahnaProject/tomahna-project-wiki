@@ -17,11 +17,11 @@
 
 ### `UbiResourceType` string
 
+- Type: [`BasicString`](../base.md#basicstring-structure)
+
 An `UbiResourceType` identifies the type of `ubi` resource that follows immediately after it.
 
 This string value table might not be complete!
-
-Type: [`BasicString`](../base.md#basicstring-structure)
 
 | Value |
 | :-- |

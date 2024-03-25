@@ -1,8 +1,8 @@
 # `ares::ArrayVertexIndex`
 
-TODO
+- [`UbiResourceType`](./index.md#ubiresourcetype-string): `"ares::ArrayVertexIndex"`
 
-[`UbiResourceType`](./index.md#ubiresourcetype-string): `"ares::ArrayVertexIndex"`
+TODO
 
 ## `ares::ArrayVertexIndex` structure
 

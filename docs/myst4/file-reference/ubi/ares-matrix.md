@@ -1,8 +1,8 @@
 # `ares::Matrix`
 
-An `ares::Matrix` contains a single [`Matrix44`](../base.md#matrix44-structure).
+- [`UbiResourceType`](./index.md#ubiresourcetype-string): `"ares::Matrix"`
 
-[`UbiResourceType`](./index.md#ubiresourcetype-string): `"ares::Matrix"`
+An `ares::Matrix` contains a single [`Matrix44`](../base.md#matrix44-structure).
 
 ## `ares::Matrix` structure
 

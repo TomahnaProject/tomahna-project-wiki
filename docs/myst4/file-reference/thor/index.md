@@ -18,11 +18,11 @@
 
 ### `ThorResourceType` enum
 
+- Type: `uint32`
+
 A `ThorResourceType` identifies the type of `thor` resource that follows immediately after it.
 
 This enum value table might not be complete!
-
-Type: `uint32`
 
 | Name | Value | Omits [header](#thorresourceheader-structure) |
 | :-- | --: | --- |

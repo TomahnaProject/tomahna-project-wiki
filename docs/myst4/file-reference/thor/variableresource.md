@@ -1,10 +1,9 @@
 # `VariableResource`
 
+- [`ThorResourceType`](./index.md#thorresourcetype-enum): `0x28`
+- Max. version: `0x1`
+
 A `VariableResource` contains the value of a variable.
-
-[`ThorResourceType`](./index.md#thorresourcetype-enum): `0x28`
-
-Max. version: `0x1`
 
 ## `VariableResource` structure
 
