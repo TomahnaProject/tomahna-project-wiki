@@ -169,7 +169,7 @@ const float32 sqrt2Div2      = sqrt(2.0) /     2.0;
 const float32 sqrt2Div2Pow10 = sqrt(2.0) / pow(2.0, 10);
 
 static uint32 CompressedQuaternionU32::CompressElement(float32 elem) {
-    return max((uint32)((elem + sqrt2Div2) * (1.0/sqrt2Div2Pow10) + 0.000025), 0x3FF);
+    return min((uint32)((elem + sqrt2Div2) * (1.0/sqrt2Div2Pow10) + 0.000025), 0x3FF);
 }
 
 void CompressedQuaternionU32::Compress(Quaternion *src) {
