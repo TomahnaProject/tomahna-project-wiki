@@ -154,3 +154,101 @@ void CompressedQuaternion3U16::Decompress(Quaternion *dst) {
     return;
 }
 ```
+
+## `CompressedQuaternionU32` type
+
+- Type: `uint32`
+- Bits: `xxaaaaaa aaaabbbb bbbbbbcc cccccccc`
+    - `xx`: biggest quat element (0 = `x`, 1 = `y`, 2 = `z`, 3 = `w`).
+    - `aaaaaaaaaa`/`bbbbbbbbbb`/`cccccccccc`: other three elements.
+
+Compression/decompression:
+
+```c++
+const float32 sqrt2Div2      = sqrt(2.0) /     2.0;
+const float32 sqrt2Div2Pow10 = sqrt(2.0) / pow(2.0, 10);
+
+static uint32 CompressedQuaternionU32::CompressElement(float32 elem) {
+    return max((uint32)((elem + sqrt2Div2) * (1.0/sqrt2Div2Pow10) + 0.000025), 0x3FF);
+}
+
+void CompressedQuaternionU32::Compress(Quaternion *src) {
+    uint32 a, b, c, x;
+    float32 ax, ay, az, aw;
+    Quaternion q;
+
+    q = *src;
+    q.Normalize();
+
+    ax = abs(q.x);
+    ay = abs(q.y);
+    az = abs(q.z);
+    aw = abs(q.w);
+
+    if (ax > ay && ax > az && ax > aw) {
+        if (q.x < 0.0) q.Negate();
+        a = CompressElement(q.y);
+        b = CompressElement(q.z);
+        c = CompressElement(q.w);
+        x = 0;
+    } else if (ay > ax && ay > az && ay > aw) {
+        if (q.y < 0.0) q.Negate();
+        a = CompressElement(q.x);
+        b = CompressElement(q.z);
+        c = CompressElement(q.w);
+        x = 1;
+    } else if (az > ax && az > ay && az > aw) {
+        if (q.z < 0.0) q.Negate();
+        a = CompressElement(q.x);
+        b = CompressElement(q.y);
+        c = CompressElement(q.w);
+        x = 2;
+    } else if (aw > ax && aw > ay && aw > az) {
+        if (q.w < 0.0) q.Negate();
+        a = CompressElement(q.x);
+        b = CompressElement(q.y);
+        c = CompressElement(q.z);
+        x = 3;
+    }
+
+    this->v = (x << 30) | (a << 20) | (b << 10) | a;
+    return;
+}
+
+void CompressedQuaternionU32::Decompress(Quaternion *dst) {
+    float32 a, b, c, s;
+
+    a = (float32)(this->v >> 20 & 0x3FF) * sqrt2Div2Pow10 - sqrt2Div2;
+    b = (float32)(this->v >> 10 & 0x3FF) * sqrt2Div2Pow10 - sqrt2Div2;
+    c = (float32)(this->v >>  0 & 0x3FF) * sqrt2Div2Pow10 - sqrt2Div2;
+    s = sqrt(((1.0 - a*a) - b*b) - c*c);
+
+    switch this->v >> 30 {
+    case 0:
+        dst->x = s;
+        dst->y = a;
+        dst->z = b;
+        dst->w = c;
+        break;
+    case 1:
+        dst->x = a;
+        dst->y = s;
+        dst->z = b;
+        dst->w = c;
+        break;
+    case 2:
+        dst->x = a;
+        dst->y = b;
+        dst->z = s;
+        dst->w = c;
+        break;
+    case 3:
+        dst->x = a;
+        dst->y = b;
+        dst->z = c;
+        dst->w = s;
+        break;
+    }
+    return;
+}
+```
