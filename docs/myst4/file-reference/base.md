@@ -128,13 +128,13 @@ Compression/decompression:
 ```c++
 void CompressedQuaternion3U16::Compress(Quaternion *src) {
     if (src->w < 0.0) {
-        this->x = (ushort)((1.0 - src->x) * 32767.0);
-        this->y = (ushort)((1.0 - src->y) * 32767.0);
-        this->z = (ushort)((1.0 - src->z) * 32767.0);
+        this->x = (uint16)((1.0 - src->x) * 32767.0);
+        this->y = (uint16)((1.0 - src->y) * 32767.0);
+        this->z = (uint16)((1.0 - src->z) * 32767.0);
     } else {
-        this->x = (ushort)((1.0 + src->x) * 32767.0);
-        this->y = (ushort)((1.0 + src->y) * 32767.0);
-        this->z = (ushort)((1.0 + src->z) * 32767.0);
+        this->x = (uint16)((1.0 + src->x) * 32767.0);
+        this->y = (uint16)((1.0 + src->y) * 32767.0);
+        this->z = (uint16)((1.0 + src->z) * 32767.0);
     }
     return;
 }
