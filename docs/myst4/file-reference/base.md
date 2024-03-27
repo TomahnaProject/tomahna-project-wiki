@@ -159,7 +159,7 @@ void CompressedQuaternion3U16::Decompress(Quaternion *dst) {
 
 - Type: `uint32`
 - Bits: `xxaaaaaa aaaabbbb bbbbbbcc cccccccc`
-    - `xx`: biggest quat element (0 = `x`, 1 = `y`, 2 = `z`, 3 = `w`).
+    - `xx`: greatest quat element (0 = `x`, 1 = `y`, 2 = `z`, 3 = `w`).
     - `aaaaaaaaaa`/`bbbbbbbbbb`/`cccccccccc`: other three elements.
 
 Compression/decompression:
@@ -186,24 +186,28 @@ void CompressedQuaternionU32::Compress(Quaternion *src) {
     aw = abs(q.w);
 
     if (ax > ay && ax > az && ax > aw) {
+        // x is greatest element.
         if (q.x < 0.0) q.Negate();
         a = CompressElement(q.y);
         b = CompressElement(q.z);
         c = CompressElement(q.w);
         x = 0;
-    } else if (ay > ax && ay > az && ay > aw) {
+    } else if (ay > az && ay > aw) {
+        // y is greatest element.
         if (q.y < 0.0) q.Negate();
         a = CompressElement(q.x);
         b = CompressElement(q.z);
         c = CompressElement(q.w);
         x = 1;
-    } else if (az > ax && az > ay && az > aw) {
+    } else if (az > aw) {
+        // z is greatest element.
         if (q.z < 0.0) q.Negate();
         a = CompressElement(q.x);
         b = CompressElement(q.y);
         c = CompressElement(q.w);
         x = 2;
-    } else if (aw > ax && aw > ay && aw > az) {
+    } else {
+        // w is greatest element.
         if (q.w < 0.0) q.Negate();
         a = CompressElement(q.x);
         b = CompressElement(q.y);
