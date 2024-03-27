@@ -165,11 +165,11 @@ void CompressedQuaternion3U16::Decompress(Quaternion *dst) {
 Compression/decompression:
 
 ```c++
-const float32 sqrt2Div2      = sqrt(2.0) /     2.0;
-const float32 sqrt2Div2Pow10 = sqrt(2.0) / pow(2.0, 10);
+const float32 oneOverRootTwo  = sqrt(2.0) /     2.0;
+const float32 scaleRange10Bit = sqrt(2.0) / pow(2.0, 10);
 
 static uint32 CompressedQuaternionU32::CompressElement(float32 elem) {
-    return min((uint32)((elem + sqrt2Div2) * (1.0/sqrt2Div2Pow10) + 0.000025), 0x3FF);
+    return min((uint32)((elem + oneOverRootTwo) * (1.0/scaleRange10Bit) + 0.000025), 0x3FF);
 }
 
 void CompressedQuaternionU32::Compress(Quaternion *src) {
@@ -218,9 +218,9 @@ void CompressedQuaternionU32::Compress(Quaternion *src) {
 void CompressedQuaternionU32::Decompress(Quaternion *dst) {
     float32 a, b, c, s;
 
-    a = (float32)(this->v >> 20 & 0x3FF) * sqrt2Div2Pow10 - sqrt2Div2;
-    b = (float32)(this->v >> 10 & 0x3FF) * sqrt2Div2Pow10 - sqrt2Div2;
-    c = (float32)(this->v >>  0 & 0x3FF) * sqrt2Div2Pow10 - sqrt2Div2;
+    a = (float32)(this->v >> 20 & 0x3FF) * scaleRange10Bit - oneOverRootTwo;
+    b = (float32)(this->v >> 10 & 0x3FF) * scaleRange10Bit - oneOverRootTwo;
+    c = (float32)(this->v >>  0 & 0x3FF) * scaleRange10Bit - oneOverRootTwo;
     s = sqrt(((1.0 - a*a) - b*b) - c*c);
 
     switch this->v >> 30 {
