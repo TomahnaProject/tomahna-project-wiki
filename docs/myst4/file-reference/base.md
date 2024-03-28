@@ -94,26 +94,26 @@ Sometimes referred to as `vec4` or `quat` respectively.
 | b | `float32` | Blue. |
 | a | `float32` | Alpha. |
 
-## `Array`<`T`> structure {#array-structure}
+## `Array`<`Type`> structure {#array-structure}
 
 | Name | Type | Description |
 | :-- | --: | --- |
 | len | `uint32` | Length of the array. |
-| elements | `T`\[`len`\] | Elements of the array. |
+| elements | `Type`\[`len`\] | Elements of the array. |
 
-## `PairArray`<`K`, `V`> structure {#pairarray-structure}
+## `PairArray`<`Key`, `Value`> structure {#pairarray-structure}
 
 | Name | Type | Description |
 | :-- | --: | --- |
 | len | `uint32` | Length of the array. |
-| elements | [`Pair`](#pair-structure)<`K`, `V`>\[`len`\] | Elements of the array. |
+| elements | [`Pair`](#pair-structure)<`Key`, `Value`>\[`len`\] | Elements of the array. |
 
-### `Pair`<`K`, `V`> structure {#pair-structure}
+### `Pair`<`Key`, `Value`> structure {#pair-structure}
 
 | Name | Type | Description |
 | :-- | --: | --- |
-| k | `K` | Key. |
-| v | `V` | Value. |
+| k | `Key` | Key. |
+| v | `Value` | Value. |
 
 ## `CompressedQuaternion3U16` structure
 
