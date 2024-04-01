@@ -61,7 +61,7 @@ This string value table might not be complete!
 | `"atlas::GeometricInstanceLOD"` |
 | `"atlas::Node"` |
 | `"atlas::Light"` |
-| `"MORE::Animation"` |
+| [`"MORE::Animation"`](./more-animation.md) |
 | `"MORE::Clip"` |
 | `"MOREActor::ActorModel"` |
 | `"MOREActor::SoundTable"` |
