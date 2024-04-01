@@ -7,7 +7,7 @@ An `ares_tools::Font` describes a font. They are contained exclusively in `.fnt`
 ## `ares_tools::Font` structure
 
 | Name | Type | Description |
-| :-- | --: | --- |
+| :-- | :-- | --- |
 | name | [`BasicString`](../base.md#basicstring-structure) | Instance name. |
 | nTextures | `uint32` | Number of `.tga` texture files containing the font's letters. They are in the same directory as the `.fnt` file with a one-indexed `_%d` suffix in the filename. |
 | letters | [`Array`](../base.md#array-structure)<[`Letter`](#letter-structure)> | Letters. |
@@ -15,7 +15,7 @@ An `ares_tools::Font` describes a font. They are contained exclusively in `.fnt`
 ### `Letter` structure
 
 | Name | Type | Description |
-| :-- | --: | --- |
+| :-- | :-- | --- |
 | code | `uint16` | Code point. |
 | lowerLeftTexCoord | [`Vector2`](../base.md#vector2-structure) |  |
 | upperRightTexCoord | [`Vector2`](../base.md#vector2-structure) |  |

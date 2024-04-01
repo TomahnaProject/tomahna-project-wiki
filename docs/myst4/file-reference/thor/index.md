@@ -5,14 +5,14 @@
 ## `thor` resource file structure
 
 | Name | Type | Description |
-| :-- | --: | --- |
+| :-- | :-- | --- |
 | magic | [`FileMagic`](../base.md#filemagic-string) | Magic signature. |
 | res | [`ThorResource`](#thorresource-structure) | Resource. |
 
 ## `ThorResource` structure
 
 | Name | Type | Description |
-| :-- | --: | --- |
+| :-- | :-- | --- |
 | type | [`ThorResourceType`](#thorresourcetype-enum) | Type. |
 | data | ... | Data according to `type`. |
 
@@ -25,7 +25,7 @@ A `ThorResourceType` identifies the type of `thor` resource that follows immedia
 This enum value table might not be complete!
 
 | Name | Value | Omits [header](#thorresourceheader-structure) |
-| :-- | --: | --- |
+| :-- | :-- | --- |
 | `AiResource` | `0x1` |  |
 | `AtlasNodeResource` | `0x2` |  |
 | `BlenderResource` | `0x3` |  |
@@ -92,6 +92,6 @@ This enum value table might not be complete!
 A `ThorResourceHeader` contains the base info for a `thor` resource.
 
 | Name | Type | Description |
-| :-- | --: | --- |
+| :-- | :-- | --- |
 | ver | `uint32` | Version, indicating which revision of a particular resource type this resource was compiled as. Though there are resource types with multiple versions, Revelation's code appears to ignore this field, always assuming the latest version; some resource headers do _not_ list the latest version. Unlike [`ubi` resource](../ubi/index.md) file versions, this version field pertains to just the associated individual resource. |
 | name | [`EncryptedString`](../base.md#encryptedstring-structure) | Name. For non-embedded resources, this will be the filename without extension. |

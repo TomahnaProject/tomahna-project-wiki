@@ -6,10 +6,10 @@ It is unknown what "ZAP" is supposed to stand for, if anything.
 
 ZAP files are little-endian, and have the .zap file extension.
 
-## `ZAP` structure
+## `ZAP` file structure
 
 | Name | Type | Description |
-| :-- | --: | --- |
+| :-- | :-- | --- |
 | hdrSize | `uint32` | Header size. Never observed to be anything other than `0x20`. |
 | nImages | `uint32` | Number of images. Never observed to be anything other than `0x2`. Then again, Revelation is _hardcoded_ to assume all ZAP files contain exactly two images. |
 | formats | `uint32`\[`nImages`\] | Formats of the respective images, as known by the [LEADTOOLS SDK](https://www.leadtools.com/help/sdk/main/api), though only three are supported (`FILE_JPEG` (`0xA`), `FILE_TIF_JPEG` (`0xB`) and `FILE_PNG` (`0x4B`)). |

@@ -8,7 +8,7 @@ TODO
 ## `GeometryResource` structure
 
 | Name | Type | Description |
-| :-- | --: | --- |
+| :-- | :-- | --- |
 | hdr | [`ThorResourceHeader`](./index.md#thorresourceheader-structure) | Header. |
 | ??? | [`EncryptedString`](../base.md#encryptedstring-structure) |  |
 | ??? | [`EncryptedString`](../base.md#encryptedstring-structure) |  |

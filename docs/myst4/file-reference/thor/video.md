@@ -8,7 +8,7 @@ A `Video` describes the properties and location of a Bink (`.bik`) video file.
 ## `Video` structure
 
 | Name | Type | Condition | Description |
-| :-- | --: | :-- | --- |
+| :-- | :-- | :-- | --- |
 | hdr | [`ThorResourceHeader`](./index.md#thorresourceheader-structure) |  | Header. |
 | ??? | `bool` |  | Revelation's code appears to ignore this field. |
 | path | [`EncryptedString`](../base.md#encryptedstring-structure) |  | Virtual path to video file. |

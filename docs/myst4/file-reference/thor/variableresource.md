@@ -8,7 +8,7 @@ A `VariableResource` contains the value of a variable.
 ## `VariableResource` structure
 
 | Name | Type | Condition | Description |
-| :-- | --: | :-- | --- |
+| :-- | :-- | :-- | --- |
 | hdr | [`ThorResourceHeader`](./index.md#thorresourceheader-structure) |  | Header. |
 | type | `uint32` |  | Type. |
 | v | `uint8` | `type == 0x1` | Value. |

@@ -9,7 +9,7 @@ It is unknown what the distinction is between `ares::Texture` and `ares::Texture
 ## `ares::Texture` structure
 
 | Name | Type | Condition | Description |
-| :-- | --: | :-- | --- |
+| :-- | :-- | :-- | --- |
 | name | [`BasicString`](../base.md#basicstring-structure) | `ver >= 0x5` | Instance name. |
 | formatLen | `uint8` |  | Length of format string. |
 | format | `uint8`[`formatLen`] |  | Format string. |

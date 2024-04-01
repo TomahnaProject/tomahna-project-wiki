@@ -5,7 +5,7 @@
 ## `ares::Camera` structure
 
 | Name | Type | Condition | Description |
-| :-- | --: | :-- | --- |
+| :-- | :-- | :-- | --- |
 | name | [`BasicString`](../base.md#basicstring-structure) | `ver >= 0x5` | Instance name. |
 | matrix | [`Matrix44`](../base.md#matrix44-structure) |  |  |
 | frustumLeft | `float32` |  |  |
@@ -30,7 +30,7 @@ TODO
 ### `ares::CameraOrthogonal` structure
 
 | Name | Type | Description |
-| :-- | --: | --- |
+| :-- | :-- | --- |
 | camera | [`ares::Camera`](#arescamera-structure) | Base camera. |
 | pixelAspectRatio | `float32` |  |
 | fov | `float32` | Field of view. |
@@ -44,7 +44,7 @@ TODO
 ### `ares::CameraPerspective` structure
 
 | Name | Type | Description |
-| :-- | --: | --- |
+| :-- | :-- | --- |
 | camera | [`ares::Camera`](#arescamera-structure) | Base camera. |
 | pixelAspectRatio | `float32` |  |
 | fovHorizontal | `float32` | Horizontal field of view. |

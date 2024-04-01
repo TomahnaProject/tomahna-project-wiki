@@ -8,7 +8,7 @@ A `Subtitle` contains localised subtitles to accompany speech samples.
 ## `Subtitle` structure
 
 | Name | Type | Description |
-| :-- | --: | --- |
+| :-- | :-- | --- |
 | hdr | [`ThorResourceHeader`](./index.md#thorresourceheader-structure) | Header. |
 | ??? | `int32` | Revelation's code appears to ignore this field. Never observed to be anything other than `0x1`. |
 | soundName | [`BasicString`](../base.md#basicstring-structure) | Full name of the sound resource to sync to. |
@@ -17,7 +17,7 @@ A `Subtitle` contains localised subtitles to accompany speech samples.
 ### `Caption` structure
 
 | Name | Type | Description |
-| :-- | --: | --- |
+| :-- | :-- | --- |
 | start | `float32` | Start time. |
 | end | `float32` | End time. |
 | text | [`BasicWString`](../base.md#basicwstring-structure) | Text. Can be empty. |

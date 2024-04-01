@@ -3,7 +3,7 @@
 ## `ubi` resource file structure
 
 | Name | Type | Description |
-| :-- | --: | --- |
+| :-- | :-- | --- |
 | magic | [`FileMagic`](../base.md#filemagic-string) | Magic signature. |
 | ver | `uint32` | Global version. Individual resource types can have different binary contents depending on this version. |
 | res | [`UbiResource`](#ubiresource-structure) | Resource. |
@@ -11,7 +11,7 @@
 ## `UbiResource` structure
 
 | Name | Type | Description |
-| :-- | --: | --- |
+| :-- | :-- | --- |
 | type | [`UbiResourceType`](#ubiresourcetype-string) | Type. |
 | data | ... | Data according to `type`. |
 

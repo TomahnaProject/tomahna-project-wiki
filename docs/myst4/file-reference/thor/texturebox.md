@@ -8,7 +8,7 @@ A `TextureBox` describes a single-layer texture box.
 ## `TextureBox` structure
 
 | Name | Type | Description |
-| :-- | --: | --- |
+| :-- | :-- | --- |
 | hdr | [`ThorResourceHeader`](./index.md#thorresourceheader-structure) | Header. |
 | ??? | [`EncryptedString`](../base.md#encryptedstring-structure) |  |
 | radius | `float32` |  |
@@ -24,6 +24,6 @@ A `TextureBox` describes a single-layer texture box.
 ### `StateDesc` structure
 
 | Name | Type | Description |
-| :-- | --: | --- |
+| :-- | :-- | --- |
 | ??? | `uint32` |  |
 | ??? | [`Array`](../base.md#array-structure)<[`EncryptedString`](../base.md#encryptedstring-structure)> |  |

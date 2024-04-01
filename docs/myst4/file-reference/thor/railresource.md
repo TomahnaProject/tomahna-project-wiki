@@ -8,7 +8,7 @@ A `RailResource` describes a rail along which a hotspot can be dragged.
 ## `RailResource` structure
 
 | Name | Type | Description |
-| :-- | --: | --- |
+| :-- | :-- | --- |
 | hdr | [`ThorResourceHeader`](./index.md#thorresourceheader-structure) | Header. |
 | hotspotResName | [`EncryptedString`](../base.md#encryptedstring-structure) | Name of the [`GeometryResource`](./geometryresource.md) which describes the draggable hotspot for this rail. |
 | initialVertex | `uint16` |  |
@@ -24,7 +24,7 @@ A `RailResource` describes a rail along which a hotspot can be dragged.
 ### `DirectionType` enum
 
 | Name | Value |
-| :-- | --: |
+| :-- | :-- |
 | `Forward` | `0x0` |
 | `Backward` | `0x1` |
 | `Bidirectional` | `0x2` |
@@ -34,7 +34,7 @@ A `RailResource` describes a rail along which a hotspot can be dragged.
 A `RailVertex` describes a vertex along a cubic Bézier curve.
 
 | Name | Type | Description |
-| :-- | --: | --- |
+| :-- | :-- | --- |
 | pos | [`Vector3`](../base.md#vector3-structure) | Position. |
 | in | [`Vector3`](../base.md#vector3-structure) |  |
 | out | [`Vector3`](../base.md#vector3-structure) |  |

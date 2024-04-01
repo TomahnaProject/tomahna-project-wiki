@@ -8,7 +8,7 @@ A `TextResource` contains a collection of [`Text`](./text.md#text) resources, po
 ## `TextResource` structure
 
 | Name | Type | Description |
-| :-- | --: | --- |
+| :-- | :-- | --- |
 | hdr | [`ThorResourceHeader`](./index.md#thorresourceheader-structure) | Header. |
 | ??? | `int32` | Revelation's code appears to ignore this field. Never observed to be anything other than `0x1`. |
 | blip | [`Blip`](#blip-structure) | Root blip. |
@@ -18,7 +18,7 @@ A `TextResource` contains a collection of [`Text`](./text.md#text) resources, po
 Under the hood a `Blip` is really just a [`TextResource`](#textresource) without the header and unknown `int32`.
 
 | Name | Type | Description |
-| :-- | --: | --- |
+| :-- | :-- | --- |
 | nTexts | `int32` | Number of texts. |
 | nGroups | `int32` | Number of groups. |
 | texts | [`BlipText`](#bliptext-structure)\[`nTexts`\] | Texts. |
@@ -27,13 +27,13 @@ Under the hood a `Blip` is really just a [`TextResource`](#textresource) without
 #### `BlipText` structure
 
 | Name | Type | Description |
-| :-- | --: | --- |
+| :-- | :-- | --- |
 | resName | [`BasicString`](../base.md#basicstring-structure) | [`Text`](./text.md#text) resource name. |
 | text | [`Text`](./text.md) | Child text. |
 
 #### `BlipGroup` structure
 
 | Name | Type | Description |
-| :-- | --: | --- |
+| :-- | :-- | --- |
 | resName | [`BasicString`](../base.md#basicstring-structure) | [`TextResource`](#textresource) resource name. |
 | group | [`Blip`](#blip-structure) | Child group. |
