@@ -24,12 +24,24 @@ Same as [`BasicString`](#basicstring-structure), except with UTF-16 encoding.
 
 ## `EncryptedString` structure
 
-Same as [`BasicString`](#basicstring-structure), except all `char`s are "swizzled". That is to say, for every byte `b` of `s`, apply `(b & 0xAA) >> 1 | (b & 0x55) << 1` to (un)swizzle.
+Same as [`BasicString`](#basicstring-structure), except all `char`s are "swizzled".
 
 | Name | Type | Description |
 | :-- | :-- | --- |
 | len | `uint32` | Length of the string. |
 | s | `char`\[`len`\] | The string. |
+
+Swizzle/unswizzle:
+
+```c++
+void EncryptedString::Swizzle() {
+    for (int i = 0; i < this->len; i++) {
+        byte b = this->s[i];
+        this->s[i] = (b & 0xAA) >> 1 | (b & 0x55) << 1;
+    }
+    return;
+}
+```
 
 ## `Vector2` structure
 
