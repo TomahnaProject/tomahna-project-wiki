@@ -86,3 +86,13 @@ This string value table might not be complete!
 | `"snd::Setting"` |
 | `"snd::Sound"` |
 | `"snd::SoundList"` |
+
+## `UbiSubResource` structure
+
+A `UbiSubResource` can be either a reference to an external [`ubi` resource file](#ubi-resource-file-structure), or contain an embedded [`UbiResource`](#ubiresource-structure).
+
+| Name | Type | Condition | Description |
+| :-- | :-- | :-- | --- |
+| valid | `bool` |  |  |
+| path | [`BasicString`](../base.md#basicstring-structure) | `valid` | Virtual path to [`ubi` resource file](#ubi-resource-file-structure). |
+| data | [`UbiResource`](#ubiresource-structure) | `valid && path.len == 0` | Embedded resource. |
