@@ -49,7 +49,8 @@ TODO
 | data | [`TrackLinear`](#tracklinear-structure)<[`Vector3`](../base.md#vector3-structure), [`EulerAngleRad`](#euleranglerad-type), [`TimeF16`](#timef16-type)> | `type == 0x1E` |  |
 | data | [`TrackBezier`](#trackbezier-structure)<[`Vector3`](../base.md#vector3-structure), [`EulerAngleRad`](#euleranglerad-type), [`TimeF16`](#timef16-type)> | `type == 0x1F` |  |
 
-Revelation's `MORE` binary exports only four *partial* `TrackNormal` types, which could be what *would* have filled the four gaps in `type` conditions.
+!!! note
+    Any other value for `type` will have Revelation crash.
 
 #### `TimeF16` type
 
