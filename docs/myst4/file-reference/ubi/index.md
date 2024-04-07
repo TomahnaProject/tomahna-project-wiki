@@ -64,7 +64,7 @@ This string value table might not be complete!
 | [`"MORE::Animation"`](./more-animation.md) |
 | `"MORE::Clip"` |
 | `"MOREActor::ActorModel"` |
-| `"MOREActor::SoundTable"` |
+| [`"MOREActor::SoundTable"`](./moreactor-soundtable.md) |
 | `"snd::Familly"` |
 | `"snd::InitValueConst < ubiU32 >"` |
 | `"snd::InitValueRange < ubiU32 >"` |
