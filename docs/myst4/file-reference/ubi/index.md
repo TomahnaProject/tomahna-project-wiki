@@ -63,7 +63,7 @@ This string value table might not be complete!
 | `"atlas::Light"` |
 | [`"MORE::Animation"`](./more-animation.md) |
 | [`"MORE::Clip"`](./more-clip.md) |
-| `"MOREActor::ActorModel"` |
+| [`"MOREActor::ActorModel"`](./moreactor-actormodel.md) |
 | [`"MOREActor::SoundTable"`](./moreactor-soundtable.md) |
 | `"snd::Familly"` |
 | `"snd::InitValueConst < ubiU32 >"` |
