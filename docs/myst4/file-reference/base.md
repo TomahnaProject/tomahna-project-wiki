@@ -106,6 +106,13 @@ Sometimes referred to as `vec4` or `quat` respectively.
 | b | `float32` | Blue. |
 | a | `float32` | Alpha. |
 
+## `Box` structure
+
+| Name | Type | Description |
+| :-- | :-- | --- |
+| pMin | [`Vector3`](#vector3-structure) |  |
+| pMax | [`Vector3`](#vector3-structure) |  |
+
 ## `Array`<`Type`> structure {#array-structure}
 
 | Name | Type | Description |
