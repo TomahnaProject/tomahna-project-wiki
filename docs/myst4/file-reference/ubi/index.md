@@ -62,7 +62,7 @@ This string value table might not be complete!
 | `"atlas::Node"` |
 | `"atlas::Light"` |
 | [`"MORE::Animation"`](./more-animation.md) |
-| `"MORE::Clip"` |
+| [`"MORE::Clip"`](./more-clip.md) |
 | `"MOREActor::ActorModel"` |
 | [`"MOREActor::SoundTable"`](./moreactor-soundtable.md) |
 | `"snd::Familly"` |
