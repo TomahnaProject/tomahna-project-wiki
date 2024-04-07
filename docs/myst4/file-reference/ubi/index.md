@@ -93,6 +93,5 @@ A `UbiSubResource` can be either a reference to an external [`ubi` resource file
 
 | Name | Type | Condition | Description |
 | :-- | :-- | :-- | --- |
-| valid | `bool` |  |  |
-| path | [`BasicString`](../base.md#basicstring-structure) | `valid` | Virtual path to [`ubi` resource file](#ubi-resource-file-structure). |
-| data | [`UbiResource`](#ubiresource-structure) | `valid && path.len == 0` | Embedded resource. |
+| path | [`BasicString`](../base.md#basicstring-structure) |  | Virtual path to [`ubi` resource file](#ubi-resource-file-structure). |
+| data | [`UbiResource`](#ubiresource-structure) | `path.len == 0` | Embedded resource. |
