@@ -16,7 +16,7 @@ TODO
 | eventEmitters | [`Array`](../base.md#array-structure)<[`EventEmitterModel`](#eventemittermodel-structure)> | `ver >= 0x8` |  |
 | soundEmitters | [`Array`](../base.md#array-structure)<[`SoundEmitterInfo`](#soundemitterinfo-structure)> | `ver < 0x8` |  |
 | soundEmitters | [`Array`](../base.md#array-structure)<[`BaseEmitterModel`](#baseemittermodel-structure)> | `ver >= 0x8` |  |
-| stateModels | [`Array`](../base.md#array-structure),[`BaseTrackContainerModel`](#basetrackcontainermodel-structure) | `ver => 0xA` |  |
+| stateModels | [`Array`](../base.md#array-structure)<[`BaseTrackContainerModel`](#basetrackcontainermodel-structure)> | `ver => 0xA` |  |
 | channels | [`Array`](../base.md#array-structure)<[`ChannelInfo`](#channelinfo-structure)> | `ver < 0x8` |  |
 | channels | [`Array`](../base.md#array-structure)<[`ChannelModel`](#channelmodel-structure)> | `ver >= 0x8` |  |
 | graphicObjectNames | [`Array`](../base.md#array-structure)<[`BasicString`](../base.md#basicstring-structure)> | `ver >= 0x6` |  |
