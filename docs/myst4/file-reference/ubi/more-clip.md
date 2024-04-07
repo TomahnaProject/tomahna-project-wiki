@@ -21,7 +21,7 @@ TODO
 | animationData | [`SyncAnims`](#syncanims-structure) | `type == 0x1` |  |
 
 !!! note
-    If `type` is not 0 or 1, Revelation will crash.
+    If `type` is not any of the values listed above, Revelation will crash.
 
 ## `LinearWarp01` structure
 
