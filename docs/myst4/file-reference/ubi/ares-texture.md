@@ -4,7 +4,7 @@
 
 An `ares::Texture` contains a texture and some relevant parsing information.
 
-It is unknown what the distinction is between `ares::Texture` and `ares::TextureFrame`; they share the same serialization routine.
+It is unknown what the distinction is between `ares::Texture` and `ares::TextureFrame`; they share the same serialisation routine.
 
 ## `ares::Texture` structure
 

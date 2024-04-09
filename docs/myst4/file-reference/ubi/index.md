@@ -66,18 +66,18 @@ This string value table might not be complete!
 | [`"MOREActor::ActorModel"`](./moreactor-actormodel.md) |
 | [`"MOREActor::SoundTable"`](./moreactor-soundtable.md) |
 | `"snd::Familly"` |
-| `"snd::InitValueConst < ubiU32 >"` |
-| `"snd::InitValueRange < ubiU32 >"` |
-| `"snd::InitValueSequence < ubiU32 >"` |
-| `"snd::InitValueConst < ubiS32 >"` |
-| `"snd::InitValueRange < ubiS32 >"` |
-| `"snd::InitValueSequence < ubiS32 >"` |
-| `"snd::InitValueConst < ubiF32 >"` |
-| `"snd::InitValueRange < ubiF32 >"` |
-| `"snd::InitValueSequence < ubiF32 >"` |
-| `"snd::InitValueConst < ubi::Vector3 >"` |
-| `"snd::InitValueRange < ubi::Vector3 >"` |
-| `"snd::InitValueSequence < ubi::Vector3 >"` |
+| [`"snd::InitValueConst < ubiU32 >"`](./snd-initvalue.md#sndinitvalueconsttype-structure) |
+| [`"snd::InitValueRange < ubiU32 >"`](./snd-initvalue.md#sndinitvaluerangetype-structure) |
+| [`"snd::InitValueSequence < ubiU32 >"`](./snd-initvalue.md#sndinitvaluesequencetype-structure) |
+| [`"snd::InitValueConst < ubiS32 >"`](./snd-initvalue.md#sndinitvalueconsttype-structure) |
+| [`"snd::InitValueRange < ubiS32 >"`](./snd-initvalue.md#sndinitvaluerangetype-structure) |
+| [`"snd::InitValueSequence < ubiS32 >"`](./snd-initvalue.md#sndinitvaluesequencetype-structure) |
+| [`"snd::InitValueConst < ubiF32 >"`](./snd-initvalue.md#sndinitvalueconsttype-structure) |
+| [`"snd::InitValueRange < ubiF32 >"`](./snd-initvalue.md#sndinitvaluerangetype-structure) |
+| [`"snd::InitValueSequence < ubiF32 >"`](./snd-initvalue.md#sndinitvaluesequencetype-structure) |
+| [`"snd::InitValueConst < ubi::Vector3 >"`](./snd-initvalue.md#sndinitvalueconsttype-structure) |
+| [`"snd::InitValueRange < ubi::Vector3 >"`](./snd-initvalue.md#sndinitvaluerangetype-structure) |
+| [`"snd::InitValueSequence < ubi::Vector3 >"`](./snd-initvalue.md#sndinitvaluesequencetype-structure) |
 | `"snd::VirtualPanning"` |
 | `"snd::Project"` |
 | `"snd::FamillyPlaying"` |

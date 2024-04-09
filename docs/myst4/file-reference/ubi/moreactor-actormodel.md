@@ -138,7 +138,7 @@
 
 | Name | Type | Condition | Description |
 | :-- | :-- | :-- | --- |
-| name | [`BasicString`](../base.md#basicstring-structure) |  | If `version < 0x6`, serialization code describes this as `geometricObjectName` instead, but still puts it in the same struct field. |
+| name | [`BasicString`](../base.md#basicstring-structure) |  | If `version < 0x6`, serialisation code describes this as `geometricObjectName` instead, but still puts it in the same struct field. |
 | graphicObjectIDs | [`Array`](../base.md#array-structure)<`uint16`> | `version >= 0x6` |  |
 | boneIDs | [`Array`](../base.md#array-structure)<`uint16`> |  |  |
 | isDeformable | `bool` | `version >= 0x5` | If `version < 0x5`, this field is implicitly `boneIDs.len > 1`. |
