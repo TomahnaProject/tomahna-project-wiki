@@ -2,17 +2,15 @@
 
 - [`UbiResourceType`](./index.md#ubiresourcetype-string): `"MORE::Animation"`
 
-TODO
-
 ## `MORE::Animation` structure
 
-| Name | Type | Condition | Description |
-| :-- | :-- | :-- | --- |
-| name | [`BasicString`](../base.md#basicstring-structure) | `ver < 0xF` | Instance name. |
-| duration | `float32` |  |  |
-| isDelta | `bool` | `ver >= 0xC` |  |
-| tracks | [`Array`](../base.md#array-structure)<[`Track`](#track-structure)> |  |  |
-| instants | [`Array`](../base.md#array-structure)<[`Instant`](#instant-structure)> | `ver >= 0x9` |  |
+| Name | Type | Condition |
+| :-- | :-- | :-- |
+| name | [`BasicString`](../base.md#basicstring-structure) | `version < 0xF` |
+| duration | `float32` |  |
+| isDelta | `bool` | `version >= 0xC` |
+| tracks | [`Array`](../base.md#array-structure)<[`Track`](#track-structure)> |  |
+| instants | [`Array`](../base.md#array-structure)<[`Instant`](#instant-structure)> | `version >= 0x9` |
 
 ### `Track` structure
 
@@ -50,7 +48,7 @@ TODO
 | data | [`TrackBezier`](#trackbezier-structure)<[`Vector3`](../base.md#vector3-structure), [`EulerAngleRad`](#euleranglerad-type), [`TimeF16`](#timef16-type)> | `type == 0x1F` |  |
 
 !!! note
-    Any other value for `type` will have Revelation crash.
+    If `type` is not any of the values listed above, Revelation will crash.
 
 #### `TimeF16` type
 
@@ -89,36 +87,36 @@ float32 EulerAngleRad::Decompress(uint16 src) {
 | Name | Type | Description |
 | :-- | :-- | --- |
 | terminate | `bool` | Revelation's code appears to ignore this field. Never observed to be anything other than `true`. |
-| keys | [`Array`](../base.md#array-structure)<[`KeySimple`](#keysimple-structure)<`Value`, `ValueComp`, `Time`>> | Keys. |
+| keys | [`Array`](../base.md#array-structure)<[`KeySimple`](#keysimple-structure)<`Value`, `ValueComp`, `Time`>> |  |
 
 ###### `KeySimple`<`Value`, `ValueComp`, `Time`> structure {#keysimple-structure}
 
-| Name | Type | Condition | Description |
-| :-- | :-- | :-- | --- |
-| time | `float32` | `ver < 0x10` |  |
-| time | `Time` | `ver >= 0x10` |  |
-| value | `ValueComp` |  |  |
+| Name | Type | Condition |
+| :-- | :-- | :-- |
+| time | `float32` | `version < 0x10` |
+| time | `Time` | `version >= 0x10` |
+| value | `ValueComp` |  |
 
 #### `TrackLinear`<`Value`, `ValueComp`, `Time`> structure {#tracklinear-structure}
 
 | Name | Type | Description |
 | :-- | :-- | --- |
 | terminate | `bool` | Revelation's code appears to ignore this field. Never observed to be anything other than `true`. |
-| keys | [`Array`](../base.md#array-structure)<[`KeyLinear`](#keylinear-structure)<`Value`, `ValueComp`, `Time`>> | Keys. |
+| keys | [`Array`](../base.md#array-structure)<[`KeyLinear`](#keylinear-structure)<`Value`, `ValueComp`, `Time`>> |  |
 
 ###### `KeyLinear`<`Value`, `ValueComp`, `Time`> structure {#keylinear-structure}
 
-| Name | Type | Description |
-| :-- | :-- | --- |
-| time | `Time` |  |
-| value | `ValueComp` |  |
+| Name | Type |
+| :-- | :-- |
+| time | `Time` |
+| value | `ValueComp` |
 
 #### `TrackBezier`<`Value`, `ValueComp`, `Time`> structure {#trackbezier-structure}
 
 | Name | Type | Description |
 | :-- | :-- | --- |
 | terminate | `bool` | Revelation's code appears to ignore this field. Never observed to be anything other than `true`. |
-| keys | [`Array`](../base.md#array-structure)<[`KeyBezier`](#keybezier-structure)<`Value`, `ValueComp`, `Time`>> | Keys. |
+| keys | [`Array`](../base.md#array-structure)<[`KeyBezier`](#keybezier-structure)<`Value`, `ValueComp`, `Time`>> |  |
 
 ###### `KeyBezier`<`Value`, `ValueComp`, `Time`> structure {#keybezier-structure}
 
@@ -126,10 +124,10 @@ float32 EulerAngleRad::Decompress(uint16 src) {
 | :-- | :-- | :-- | --- |
 | time | `Time` |  |  |
 | value | `ValueComp` |  |  |
-| derSrc | `Value` | `ver < 0x11` |  |
-| derDst | `Value` | `ver < 0x11` | Ignored if `Value == Quaternion`. |
-| derSrc | `ValueComp` | `ver >= 0x11` |  |
-| derDst | `ValueComp` | `ver >= 0x11 && Value != Quaternion` |  |
+| derSrc | `Value` | `version < 0x11` |  |
+| derDst | `Value` | `version < 0x11` | Ignored if `Value == Quaternion`. |
+| derSrc | `ValueComp` | `version >= 0x11` |  |
+| derDst | `ValueComp` | `version >= 0x11 && Value != Quaternion` |  |
 | flatOut | `bool` |  |  |
 
 #### `TrackTCB`<`Value`> structure {#tracktcb-structure}
@@ -137,44 +135,44 @@ float32 EulerAngleRad::Decompress(uint16 src) {
 | Name | Type | Description |
 | :-- | :-- | --- |
 | terminate | `bool` | Revelation's code appears to ignore this field. Never observed to be anything other than `true`. |
-| keys | [`Array`](../base.md#array-structure)<[`KeyTCB`](#keytcb-structure)<`Value`>> | Keys. |
+| keys | [`Array`](../base.md#array-structure)<[`KeyTCB`](#keytcb-structure)<`Value`>> |  |
 
 ###### `KeyTCB`<`Value`> structure {#keytcb-structure}
 
-| Name | Type | Condition | Description |
-| :-- | :-- | :-- | --- |
-| time | `float32` |  |  |
-| value | `Value` |  |  |
-| tens | `float32` |  |  |
-| cont | `float32` |  |  |
-| bias | `float32` |  |  |
-| easeTo | `float32` |  |  |
-| easeFrom | `float32` |  |  |
-| derSrc | `Value` |  |  |
-| derDst | `Value` |  |  |
-| angle | `float32` | `Value == Quaternion` |  |
-| axis | [`Vector3`](../base.md#vector3-structure) | `Value == Quaternion` |  |
+| Name | Type | Condition |
+| :-- | :-- | :-- |
+| time | `float32` |  |
+| value | `Value` |  |
+| tens | `float32` |  |
+| cont | `float32` |  |
+| bias | `float32` |  |
+| easeTo | `float32` |  |
+| easeFrom | `float32` |  |
+| derSrc | `Value` |  |
+| derDst | `Value` |  |
+| angle | `float32` | `Value == Quaternion` |
+| axis | [`Vector3`](../base.md#vector3-structure) | `Value == Quaternion` |
 
 #### `TrackDisplacement` structure
 
-| Name | Type | Description |
-| :-- | :-- | --- |
-| position | [`Track`](#track-structure) |  |
-| rotation | [`Track`](#track-structure) |  |
+| Name | Type |
+| :-- | :-- |
+| position | [`Track`](#track-structure) |
+| rotation | [`Track`](#track-structure) |
 
 #### `TrackEvent` structure
 
-| Name | Type | Description |
-| :-- | :-- | --- |
-| keys | [`Array`](../base.md#array-structure)<[`KeyEvent`](#keyevent-structure)> | Keys. |
+| Name | Type |
+| :-- | :-- |
+| keys | [`Array`](../base.md#array-structure)<[`KeyEvent`](#keyevent-structure)> |
 
 ###### `KeyEvent` structure
 
-| Name | Type | Condition | Description |
-| :-- | :-- | :-- | --- |
-| time | `float32` |  |  |
-| value | `uint32` |  |  |
-| userData | [`BasicString`](../base.md#basicstring-structure) | `ver >= 0x2` |  |
+| Name | Type | Condition |
+| :-- | :-- | :-- |
+| time | `float32` |  |
+| value | `uint32` |  |
+| userData | [`BasicString`](../base.md#basicstring-structure) | `version >= 0x2` |
 
 #### `TrackUser`<`Value`> structure {#trackuser-structure}
 
@@ -184,7 +182,7 @@ float32 EulerAngleRad::Decompress(uint16 src) {
 
 ### `Instant` structure
 
-| Name | Type | Description |
-| :-- | :-- | --- |
-| time | `float32` |  |
-| id | `uint16` |  |
+| Name | Type |
+| :-- | :-- |
+| time | `float32` |
+| id | `uint16` |

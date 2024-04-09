@@ -5,14 +5,14 @@
 | Name | Type | Description |
 | :-- | :-- | --- |
 | magic | [`FileMagic`](../base.md#filemagic-string) | Magic signature. |
-| ver | `uint32` | Global version. Individual resource types can have different binary contents depending on this version. |
-| res | [`UbiResource`](#ubiresource-structure) | Resource. |
+| version | `uint32` | Global version. Individual resource types can have different binary contents depending on this version. |
+| resource | [`UbiResource`](#ubiresource-structure) |  |
 
 ## `UbiResource` structure
 
 | Name | Type | Description |
 | :-- | :-- | --- |
-| type | [`UbiResourceType`](#ubiresourcetype-string) | Type. |
+| type | [`UbiResourceType`](#ubiresourcetype-string) |  |
 | data | ... | Data according to `type`. |
 
 ### `UbiResourceType` string
@@ -98,7 +98,7 @@ A `UbiSubResource` can be either a reference to an external [`ubi` resource file
 
 ### `ValidatedUbiSubResource` structure
 
-| Name | Type | Condition | Description |
-| :-- | :-- | :-- | --- |
-| isValid | `bool` |  |  |
-| subRes | [`UbiSubResource`](#ubisubresource-structure) | `isValid` |  |
+| Name | Type | Condition |
+| :-- | :-- | :-- |
+| isValid | `bool` |  |
+| subRes | [`UbiSubResource`](#ubisubresource-structure) | `isValid` |

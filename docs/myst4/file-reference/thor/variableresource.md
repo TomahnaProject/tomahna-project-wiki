@@ -7,18 +7,18 @@ A `VariableResource` contains the value of a variable.
 
 ## `VariableResource` structure
 
-| Name | Type | Condition | Description |
-| :-- | :-- | :-- | --- |
-| hdr | [`ThorResourceHeader`](./index.md#thorresourceheader-structure) |  | Header. |
-| type | `uint32` |  | Type. |
-| v | `uint8` | `type == 0x1` | Value. |
-| v | `uint16` | `type == 0x2` | Value. |
-| v | `uint32` | `type == 0x3` | Value. |
-| v | `int8` | `type == 0x4` | Value. |
-| v | `int16` | `type == 0x5` | Value. |
-| v | `int32` | `type == 0x6` | Value. |
-| v | `float32` | `type == 0x7` | Value. |
-| v | `float64` | `type == 0x8` | Value. |
-| v | `bool` | `type == 0x9` | Value. |
-| v | [`BasicString`](../base.md#basicstring-structure) | `type == 0xA` | Value. |
-| v | [`Vector3`](../base.md#vector3-structure) | `type == 0xB` | Value. |
+| Name | Type | Condition |
+| :-- | :-- | :-- |
+| header | [`ThorResourceHeader`](./index.md#thorresourceheader-structure) |  |
+| type | `uint32` |  |
+| value | `uint8` | `type == 0x1` |
+| value | `uint16` | `type == 0x2` |
+| value | `uint32` | `type == 0x3` |
+| value | `int8` | `type == 0x4` |
+| value | `int16` | `type == 0x5` |
+| value | `int32` | `type == 0x6` |
+| value | `float32` | `type == 0x7` |
+| value | `float64` | `type == 0x8` |
+| value | `bool` | `type == 0x9` |
+| value | [`BasicString`](../base.md#basicstring-structure) | `type == 0xA` |
+| value | [`Vector3`](../base.md#vector3-structure) | `type == 0xB` |

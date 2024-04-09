@@ -4,48 +4,44 @@
 
 ## `ares::Camera` structure
 
-| Name | Type | Condition | Description |
-| :-- | :-- | :-- | --- |
-| name | [`BasicString`](../base.md#basicstring-structure) | `ver >= 0x5` | Instance name. |
-| matrix | [`Matrix44`](../base.md#matrix44-structure) |  |  |
-| frustumLeft | `float32` |  |  |
-| frustumRight | `float32` |  |  |
-| frustumBottom | `float32` |  |  |
-| frustumTop | `float32` |  |  |
-| frustumNear | `float32` |  |  |
-| frustumFar | `float32` |  |  |
-| viewportPosX | `float32` |  |  |
-| viewportPosY | `float32` |  |  |
-| viewportWidth | `float32` |  |  |
-| viewportHeight | `float32` |  |  |
-| sortModeOpaque | `uint32` |  |  |
-| sortModeTransparent | `uint32` |  |  |
+| Name | Type | Condition |
+| :-- | :-- | :-- |
+| name | [`BasicString`](../base.md#basicstring-structure) | `version >= 0x5` |
+| matrix | [`Matrix44`](../base.md#matrix44-structure) |  |
+| frustumLeft | `float32` |  |
+| frustumRight | `float32` |  |
+| frustumBottom | `float32` |  |
+| frustumTop | `float32` |  |
+| frustumNear | `float32` |  |
+| frustumFar | `float32` |  |
+| viewportPosX | `float32` |  |
+| viewportPosY | `float32` |  |
+| viewportWidth | `float32` |  |
+| viewportHeight | `float32` |  |
+| sortModeOpaque | `uint32` |  |
+| sortModeTransparent | `uint32` |  |
 
 ## `ares::CameraOrthogonal`
 
 - [`UbiResourceType`](./index.md#ubiresourcetype-string): `"ares::CameraOrthogonal"`
 
-TODO
-
 ### `ares::CameraOrthogonal` structure
 
-| Name | Type | Description |
-| :-- | :-- | --- |
-| camera | [`ares::Camera`](#arescamera-structure) | Base camera. |
-| pixelAspectRatio | `float32` |  |
-| fov | `float32` | Field of view. |
+| Name | Type |
+| :-- | :-- |
+| base | [`ares::Camera`](#arescamera-structure) |
+| pixelAspectRatio | `float32` |
+| fieldOfView | `float32` |
 
 ## `ares::CameraPerspective`
 
 - [`UbiResourceType`](./index.md#ubiresourcetype-string): `"ares::CameraOrthogonal"`
 
-TODO
-
 ### `ares::CameraPerspective` structure
 
-| Name | Type | Description |
+| base | Type | Description |
 | :-- | :-- | --- |
-| camera | [`ares::Camera`](#arescamera-structure) | Base camera. |
+| base | [`ares::Camera`](#arescamera-structure) |  |
 | pixelAspectRatio | `float32` |  |
-| fovHorizontal | `float32` | Horizontal field of view. |
-| isFOVHorizontal | `bool` | If false, FOV is set to 0.0. |
+| fieldOfViewHorizontal | `float32` |  |
+| isFieldOfViewHorizontal | `bool` | If `false`, field of view is set to 0.0. |

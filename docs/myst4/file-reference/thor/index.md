@@ -7,13 +7,13 @@
 | Name | Type | Description |
 | :-- | :-- | --- |
 | magic | [`FileMagic`](../base.md#filemagic-string) | Magic signature. |
-| res | [`ThorResource`](#thorresource-structure) | Resource. |
+| resource | [`ThorResource`](#thorresource-structure) | Resource. |
 
 ## `ThorResource` structure
 
 | Name | Type | Description |
 | :-- | :-- | --- |
-| type | [`ThorResourceType`](#thorresourcetype-enum) | Type. |
+| type | [`ThorResourceType`](#thorresourcetype-enum) |  |
 | data | ... | Data according to `type`. |
 
 ### `ThorResourceType` enum
@@ -26,19 +26,19 @@ This enum value table might not be complete!
 
 | Name | Value | Omits [header](#thorresourceheader-structure) |
 | :-- | :-- | --- |
-| `AiResource` | `0x1` |  |
-| `AtlasNodeResource` | `0x2` |  |
-| `BlenderResource` | `0x3` |  |
-| [`CommandBlock`](./commandblock.md) | `0x6` |  |
-| [`ContainerResource`](./containerresource.md) | `0x7` |  |
-| `Context` | `0x8` |  |
-| `CursorResource` | `0x9` |  |
-| `FlareResource` | `0xA` |  |
-| `FontResource` | `0xB` |  |
-| [`GeometryResource`](./geometryresource.md) | `0xC` |  |
-| `HotspotResource` | `0xD` |  |
-| `Interpolator` | `0xE` |  |
-| [`TextureBox`](./texturebox.md) | `0xF` |  |
+| `AiResource` | `0x01` |  |
+| `AtlasNodeResource` | `0x02` |  |
+| `BlenderResource` | `0x03` |  |
+| [`CommandBlock`](./commandblock.md) | `0x06` |  |
+| [`ContainerResource`](./containerresource.md) | `0x07` |  |
+| `Context` | `0x08` | * |
+| `CursorResource` | `0x09` |  |
+| `FlareResource` | `0x0A` |  |
+| `FontResource` | `0x0B` |  |
+| [`GeometryResource`](./geometryresource.md) | `0x0C` |  |
+| `HotspotResource` | `0x0D` |  |
+| `Interpolator` | `0x0E` |  |
+| [`TextureBox`](./texturebox.md) | `0x0F` |  |
 | `LayerExtractResource` | `0x10` |  |
 | `LightResource` | `0x11` |  |
 | `LightmapModAddResource` | `0x13` |  |
@@ -93,5 +93,5 @@ A `ThorResourceHeader` contains the base info for a `thor` resource.
 
 | Name | Type | Description |
 | :-- | :-- | --- |
-| ver | `uint32` | Version, indicating which revision of a particular resource type this resource was compiled as. Though there are resource types with multiple versions, Revelation's code appears to ignore this field, always assuming the latest version; some resource headers do _not_ list the latest version. Unlike [`ubi` resource](../ubi/index.md) file versions, this version field pertains to just the associated individual resource. |
-| name | [`EncryptedString`](../base.md#encryptedstring-structure) | Name. For non-embedded resources, this will be the filename without extension. |
+| version | `uint32` | Indicates which revision of a particular resource type this resource was compiled as. Though there are resource types with multiple versions, Revelation's code appears to ignore this field, always assuming the latest version; some resource headers do _not_ list the latest version. Unlike [`ubi` resource](../ubi/index.md) file versions, this version field pertains to just the associated individual resource. |
+| name | [`EncryptedString`](../base.md#encryptedstring-structure) | For non-embedded resources, this must be the filename without extension. |

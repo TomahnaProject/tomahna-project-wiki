@@ -8,9 +8,9 @@ An `ares_tools::Font` describes a font. They are contained exclusively in `.fnt`
 
 | Name | Type | Description |
 | :-- | :-- | --- |
-| name | [`BasicString`](../base.md#basicstring-structure) | Instance name. |
+| name | [`BasicString`](../base.md#basicstring-structure) |  |
 | nTextures | `uint32` | Number of `.tga` texture files containing the font's letters. They are in the same directory as the `.fnt` file with a one-indexed `_%d` suffix in the filename. |
-| letters | [`Array`](../base.md#array-structure)<[`Letter`](#letter-structure)> | Letters. |
+| letters | [`Array`](../base.md#array-structure)<[`Letter`](#letter-structure)> |  |
 
 ### `Letter` structure
 
@@ -19,6 +19,7 @@ An `ares_tools::Font` describes a font. They are contained exclusively in `.fnt`
 | code | `uint16` | Code point. |
 | lowerLeftTexCoord | [`Vector2`](../base.md#vector2-structure) |  |
 | upperRightTexCoord | [`Vector2`](../base.md#vector2-structure) |  |
-| textureIndex | `int` | Index of texture file containing this letter. |
+| textureIndex | `int32` | Index of the texture file containing this letter. See the description of [`ares_tools::Font`]'s `nTextures` field above for more info. |
 
-The floats in both tex coords consider the bottom-left (0.0, 0.0), and the upper right (1.0, 1.0).
+!!! note
+    The floats in both tex coords consider the bottom-left (0.0, 0.0), and the upper right (1.0, 1.0).

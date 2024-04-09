@@ -9,19 +9,21 @@ A `RailResource` describes a rail along which a hotspot can be dragged.
 
 | Name | Type | Description |
 | :-- | :-- | --- |
-| hdr | [`ThorResourceHeader`](./index.md#thorresourceheader-structure) | Header. |
-| hotspotResName | [`EncryptedString`](../base.md#encryptedstring-structure) | Name of the [`GeometryResource`](./geometryresource.md) which describes the draggable hotspot for this rail. |
+| header | [`ThorResourceHeader`](./index.md#thorresourceheader-structure) |  |
+| hotspotName | [`EncryptedString`](../base.md#encryptedstring-structure) | Name of the [`GeometryResource`](./geometryresource.md) which describes the draggable hotspot for this rail. |
 | initialVertex | `uint16` |  |
-| directionType | [`DirectionType`](#directiontype-enum) | The direction in which the hotspot can be dragged along the rail. |
+| directionType | [`DirectionType`](#directiontype-enum) |  |
 | sensitivity | `float32` |  |
 | snapFactor | `float32` |  |
 | maxAngle | `float32` |  |
-| isCyclic | `bool` | Indicates whether the first and last rail segments connect back to each other, i.e. whether the hotspot can be dragged past the last rail segment to the first (and/or vice versa). |
+| isCyclic | `bool` | Indicates whether the first and last rail segments connect back to each other, i.e. whether the rail's hotspot can be dragged past the last rail segment to the first (and/or vice versa). |
 | orientationX | `float32` |  |
 | orientationZ | `float32` |  |
-| vertices | [`Array`](../base.md#array-structure)<[`RailVertex`](#railvertex-structure)> | Vertices of the rail's cubic Bézier curve. If `!isCyclic`, `vertices[0].in` and `vertices[vertices.len-1].out` are ignored. |
+| vertices | [`Array`](../base.md#array-structure)<[`RailVertex`](#railvertex-structure)> | If `!isCyclic`, `vertices[0].in` and `vertices[vertices.len-1].out` are ignored. |
 
 ### `DirectionType` enum
+
+`DirectionType` describes the direction in which a hotspot can be dragged along a rail.
 
 | Name | Value |
 | :-- | :-- |

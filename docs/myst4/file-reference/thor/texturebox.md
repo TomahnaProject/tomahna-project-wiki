@@ -9,8 +9,8 @@ A `TextureBox` describes a single-layer texture box.
 
 | Name | Type | Description |
 | :-- | :-- | --- |
-| hdr | [`ThorResourceHeader`](./index.md#thorresourceheader-structure) | Header. |
-| ??? | [`EncryptedString`](../base.md#encryptedstring-structure) |  |
+| header | [`ThorResourceHeader`](./index.md#thorresourceheader-structure) |  |
+| bftexPath | [`EncryptedString`](../base.md#encryptedstring-structure) | Virtual path to the [`BigFile`](../bigfile.md#bigfile-structure) containing the texture sets. During loading, this BigFile is mounted to `/bftex`. |
 | radius | `float32` |  |
 | isZBox | `bool` |  |
 | zNear | `float32` |  |
@@ -23,7 +23,7 @@ A `TextureBox` describes a single-layer texture box.
 
 ### `StateDesc` structure
 
-| Name | Type | Description |
-| :-- | :-- | --- |
-| ??? | `uint32` |  |
-| ??? | [`Array`](../base.md#array-structure)<[`EncryptedString`](../base.md#encryptedstring-structure)> |  |
+| Name | Type |
+| :-- | :-- |
+| ??? | `uint32` |
+| ??? | [`Array`](../base.md#array-structure)<[`EncryptedString`](../base.md#encryptedstring-structure)> |

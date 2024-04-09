@@ -6,7 +6,7 @@ This documentation is included for completion's sake, but this type has never be
 
 ## `MOREActor::SoundTable` structure
 
-| Name | Type | Description |
-| :-- | :-- | --- |
-| soundIDs | [`Array`](../base.md#array-structure)<`uint32`> |  |
-| names | [`Array`](../base.md#array-structure)<[`BasicString`](../base.md#basicstring-structure)> |  |
+| Name | Type |
+| :-- | :-- |
+| soundIDs | [`Array`](../base.md#array-structure)<`uint32`> |
+| names | [`Array`](../base.md#array-structure)<[`BasicString`](../base.md#basicstring-structure)> |

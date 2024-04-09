@@ -9,12 +9,12 @@ A `Video` describes the properties and location of a Bink (`.bik`) video file.
 
 | Name | Type | Condition | Description |
 | :-- | :-- | :-- | --- |
-| hdr | [`ThorResourceHeader`](./index.md#thorresourceheader-structure) |  | Header. |
+| header | [`ThorResourceHeader`](./index.md#thorresourceheader-structure) |  |  |
 | ??? | `bool` |  | Revelation's code appears to ignore this field. |
 | path | [`EncryptedString`](../base.md#encryptedstring-structure) |  | Virtual path to video file. |
-| hasAlpha | `bool` |  | Whether the video contains transparency data. |
-| preload | `bool` |  | Whether the video should be preloaded. |
-| isMonochrome | `bool` |  | Whether the video is monochrome. |
+| hasAlpha | `bool` |  | Indicates whether the video contains transparency data. |
+| preload | `bool` |  | Indicates whether the video should be preloaded. |
+| isMonochrome | `bool` |  |  |
 | dataRate | `uint32` |  |  |
-| hasKeyframes | `bool` |  | Whether this resource contains keyframes for easy seeking. |
-| keyframes | [`ThorResource`](./index.md#thorresource-structure) | `hasKeyframes` | [`ContainerResource`](./containerresource.md) called `"keyframe"` containing [`VariableResource`](./variableresource.md)s with `uint32` type. Resource is ignored if not a `ContainerResource`, and contained resources are ignored if not `VariableResource`. However, `VariableResource`s **must** have `uint32` type, or Revelation will crash. |
+| hasKeyframes | `bool` |  |  |
+| keyframes | [`ThorResource`](./index.md#thorresource-structure) | `hasKeyframes` | Used for easy seeking through the video. Resource is ignored if not a [`ContainerResource`](./containerresource.md), and contained resources are ignored if not `VariableResource`. However, the `VariableResource`s must have `uint32` type, or Revelation will crash. |

@@ -9,15 +9,15 @@ A `Subtitle` contains localised subtitles to accompany speech samples.
 
 | Name | Type | Description |
 | :-- | :-- | --- |
-| hdr | [`ThorResourceHeader`](./index.md#thorresourceheader-structure) | Header. |
+| header | [`ThorResourceHeader`](./index.md#thorresourceheader-structure) |  |
 | ??? | `int32` | Revelation's code appears to ignore this field. Never observed to be anything other than `0x1`. |
 | soundName | [`BasicString`](../base.md#basicstring-structure) | Full name of the sound resource to sync to. |
-| captions | [`Array`](../base.md#array-structure)<[`Caption`](#caption-structure)> | Captions. In the source material, all captions will have a start time equal to the end time of the caption before it. It is unconfirmed whether this is required. |
+| captions | [`Array`](../base.md#array-structure)<[`Caption`](#caption-structure)> | In source material, all captions have a start time equal to the end time of the caption before it. It is unconfirmed whether this is required. |
 
 ### `Caption` structure
 
 | Name | Type | Description |
 | :-- | :-- | --- |
-| start | `float32` | Start time. |
-| end | `float32` | End time. |
-| text | [`BasicWString`](../base.md#basicwstring-structure) | Text. Can be empty. |
+| startTime | `float32` |  |
+| endTime | `float32` |  |
+| text | [`BasicWString`](../base.md#basicwstring-structure) | Can be empty. |
