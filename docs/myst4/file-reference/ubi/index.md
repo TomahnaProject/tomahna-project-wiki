@@ -78,7 +78,7 @@ This string value table might not be complete!
 | [`"snd::InitValueConst < ubi::Vector3 >"`](./snd-initvalue.md#sndinitvalueconsttype-structure) |
 | [`"snd::InitValueRange < ubi::Vector3 >"`](./snd-initvalue.md#sndinitvaluerangetype-structure) |
 | [`"snd::InitValueSequence < ubi::Vector3 >"`](./snd-initvalue.md#sndinitvaluesequencetype-structure) |
-| `"snd::VirtualPanning"` |
+| [`"snd::VirtualPanning"`](./snd-virtualpanning.md) |
 | `"snd::Project"` |
 | `"snd::FamillyPlaying"` |
 | `"snd::FamillyPlayingSound"` |
