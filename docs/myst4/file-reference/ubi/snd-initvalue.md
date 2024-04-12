@@ -40,5 +40,5 @@ Getter that returns a value from a looping sequence of `InitValue`s.
 
 | Name | Type | Description |
 | :-- | :-- | :-- |
-| seq | [`Array`](../base.md#array-structure)<[`UbiSubResource`](./index.md#ubisubresource-structure)> | Revelation assumes all `data.type` to be one of the `"snd::InitValue"` types. |
+| seq | [`Array`](../base.md#array-structure)<[`UbiSubResource`](./index.md#ubisubresource-structure)> | Revelation assumes all `type` to be one of the `"snd::InitValue"` types with the same `Type`. |
 | iterType | `uint32` | Enum which involves the iteration method for `seq`. Never observed to be anything other than `0x2`. Only known effect is for value `0x0`: every loop through the sequence, the order is randomised. If the value is not `0x0`, every loop through the sequence is ordered from begin to end. |

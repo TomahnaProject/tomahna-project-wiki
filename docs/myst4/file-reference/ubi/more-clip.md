@@ -38,13 +38,13 @@
 
 | Name | Type | Description |
 | :-- | :-- | --- |
-| animation | [`UbiSubResource`](./index.md#ubisubresource-structure) | Revelation assumes `data.type` to be [`"MORE::Animation"`](./more-animation.md). |
+| animation | [`UbiSubResource`](./index.md#ubisubresource-structure) | Revelation assumes `type` to be [`"MORE::Animation"`](./more-animation.md). |
 
 ## `SyncAnims` structure
 
 | Name | Type | Condition | Description |
 | :-- | :-- | :-- | --- |
-| subLayers | [`Array`](../base.md#array-structure)<[`UbiSubResource`](./index.md#ubisubresource-structure)> |  | Revelation assumes all `data.type` to be [`"MORE::Animation"`](./more-animation.md). |
+| subLayers | [`Array`](../base.md#array-structure)<[`UbiSubResource`](./index.md#ubisubresource-structure)> |  | Revelation assumes all `type` to be [`"MORE::Animation"`](./more-animation.md). |
 | blendings | `float32`[`subLayers.len`] | `version >= 0x1` |  |
 | adjustDurations | `bool`[`subLayers.len`] | `version >= 0xB` |  |
 
