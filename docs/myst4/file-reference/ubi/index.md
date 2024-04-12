@@ -101,4 +101,4 @@ A `UbiSubResource` can be either a reference to an external [`ubi` resource file
 | Name | Type | Condition |
 | :-- | :-- | :-- |
 | isValid | `bool` |  |
-| subRes | [`UbiSubResource`](#ubisubresource-structure) | `isValid` |
+| resource | [`UbiSubResource`](#ubisubresource-structure) | `isValid` |
