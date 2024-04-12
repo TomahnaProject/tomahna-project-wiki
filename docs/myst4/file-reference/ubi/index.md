@@ -83,7 +83,7 @@ This string value table might not be complete!
 | `"snd::FamillyPlaying"` |
 | `"snd::FamillyPlayingSound"` |
 | `"snd::Sequence"` |
-| `"snd::Setting"` |
+| [`"snd::Setting"`](./snd-setting.md) |
 | `"snd::Sound"` |
 | [`"snd::SoundList"`](./snd-soundlist.md) |
 
