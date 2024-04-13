@@ -84,7 +84,7 @@ This string value table might not be complete!
 | `"snd::FamillyPlayingSound"` |
 | `"snd::Sequence"` |
 | [`"snd::Setting"`](./snd-setting.md) |
-| `"snd::Sound"` |
+| [`"snd::Sound"`](./snd-sound.md) |
 | [`"snd::SoundList"`](./snd-soundlist.md) |
 
 ## `UbiSubResource` structure
