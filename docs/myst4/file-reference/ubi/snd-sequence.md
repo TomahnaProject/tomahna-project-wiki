@@ -2,7 +2,7 @@
 
 - [`UbiResourceType`](./index.md#ubiresourcetype-string): `"snd::Sequence"`
 
-`snd::Sequence` resources are exclusively contained in `.seq` files found in `sound.m4b/sequence`.
+`snd::Sequence` resources are exclusively contained in `.seq` files found in `sound.m4b/sequence/`.
 
 ## `snd::Sequence` structure
 

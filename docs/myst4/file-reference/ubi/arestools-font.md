@@ -2,7 +2,7 @@
 
 - [`UbiResourceType`](./index.md#ubiresourcetype-string): `"ares_tools::Font"`
 
-An `ares_tools::Font` describes a font. They are contained exclusively in `.fnt` files found in `data.m4b/common/common.m4b/font`.
+An `ares_tools::Font` describes a font. They are contained exclusively in `.fnt` files found in `data.m4b/common/common.m4b/font/`.
 
 ## `ares_tools::Font` structure
 
