@@ -65,7 +65,7 @@ This string value table might not be complete!
 | [`"MORE::Clip"`](./more-clip.md) |
 | [`"MOREActor::ActorModel"`](./moreactor-actormodel.md) |
 | [`"MOREActor::SoundTable"`](./moreactor-soundtable.md) |
-| `"snd::Familly"` |
+| [`"snd::Familly"`](./snd-familly.md#sndfamilly-structure) |
 | [`"snd::InitValueConst < ubiU32 >"`](./snd-initvalue.md#sndinitvalueconsttype-structure) |
 | [`"snd::InitValueRange < ubiU32 >"`](./snd-initvalue.md#sndinitvaluerangetype-structure) |
 | [`"snd::InitValueSequence < ubiU32 >"`](./snd-initvalue.md#sndinitvaluesequencetype-structure) |
@@ -80,8 +80,8 @@ This string value table might not be complete!
 | [`"snd::InitValueSequence < ubi::Vector3 >"`](./snd-initvalue.md#sndinitvaluesequencetype-structure) |
 | [`"snd::VirtualPanning"`](./snd-virtualpanning.md) |
 | `"snd::Project"` |
-| `"snd::FamillyPlaying"` |
-| `"snd::FamillyPlayingSound"` |
+| [`"snd::FamillyPlaying"`](./snd-familly.md#sndfamillyplaying-sndfamillyplayingsound-structure) |
+| [`"snd::FamillyPlayingSound"`](./snd-familly.md#sndfamillyplaying-sndfamillyplayingsound-structure) |
 | `"snd::Sequence"` |
 | [`"snd::Setting"`](./snd-setting.md) |
 | [`"snd::Sound"`](./snd-sound.md) |
