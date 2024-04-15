@@ -79,7 +79,7 @@ This string value table might not be complete!
 | [`"snd::InitValueRange < ubi::Vector3 >"`](./snd-initvalue.md#sndinitvaluerangetype-structure) |
 | [`"snd::InitValueSequence < ubi::Vector3 >"`](./snd-initvalue.md#sndinitvaluesequencetype-structure) |
 | [`"snd::VirtualPanning"`](./snd-virtualpanning.md) |
-| `"snd::Project"` |
+| [`"snd::Project"`](./snd-project.md) |
 | [`"snd::FamillyPlaying"`](./snd-familly.md#sndfamillyplaying-sndfamillyplayingsound-structure) |
 | [`"snd::FamillyPlayingSound"`](./snd-familly.md#sndfamillyplaying-sndfamillyplayingsound-structure) |
 | [`"snd::Sequence"`](./snd-sequence.md) |
