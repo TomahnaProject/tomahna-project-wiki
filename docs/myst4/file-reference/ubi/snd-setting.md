@@ -18,8 +18,8 @@
 | position | [`ValidatedUbiSubResource`](./index.md#validatedubisubresource-structure) [^5] |  |  |
 | behaviour | `int32` |  |  |
 
-[^1]: If `isValid`, Revelation assumes `type` to be one of the `"snd::InitValue"` types with a `float32` value type.
-[^2]: If `isValid`, Revelation assumes `type` to be one of the `"snd::InitValue"` types with a `uint32` value type.
-[^3]: If `isValid`, Revelation assumes `type` to be one of the `"snd::InitValue"` types with a `int32` value type.
+[^1]: If `isValid`, Revelation assumes `type` to be one of the [`"snd::InitValue"`](./snd-initvalue.md) types with a `float32` value type.
+[^2]: If `isValid`, Revelation assumes `type` to be one of the [`"snd::InitValue"`](./snd-initvalue.md) types with a `uint32` value type.
+[^3]: If `isValid`, Revelation assumes `type` to be one of the [`"snd::InitValue"`](./snd-initvalue.md) types with a `int32` value type.
 [^4]: If `isValid`, Revelation assumes `type` to be [`snd::VirtualPanning`](./snd-virtualpanning.md).
-[^5]: If `isValid`, Revelation assumes `type` to be one of the `"snd::InitValue"` types with a [`Vector3`](../base.md#vector3-structure) value type.
+[^5]: If `isValid`, Revelation assumes `type` to be one of the [`"snd::InitValue"`](./snd-initvalue.md) types with a [`Vector3`](../base.md#vector3-structure) value type.
