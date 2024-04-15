@@ -82,7 +82,7 @@ This string value table might not be complete!
 | `"snd::Project"` |
 | [`"snd::FamillyPlaying"`](./snd-familly.md#sndfamillyplaying-sndfamillyplayingsound-structure) |
 | [`"snd::FamillyPlayingSound"`](./snd-familly.md#sndfamillyplaying-sndfamillyplayingsound-structure) |
-| `"snd::Sequence"` |
+| [`"snd::Sequence"`](./snd-sequence.md) |
 | [`"snd::Setting"`](./snd-setting.md) |
 | [`"snd::Sound"`](./snd-sound.md) |
 | [`"snd::SoundList"`](./snd-soundlist.md) |
