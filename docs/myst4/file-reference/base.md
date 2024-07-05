@@ -234,7 +234,7 @@ void CompressedQuaternionU32::Compress(Quaternion *src) {
         x = 3;
     }
 
-    this->v = (x << 30) | (a << 20) | (b << 10) | a;
+    this->v = (x << 30) | (a << 20) | (b << 10) | c;
     return;
 }
 
