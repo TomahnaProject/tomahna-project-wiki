@@ -12,7 +12,7 @@
 | defaultSetting | [`snd::Setting`](./snd-setting.md) |  |  |
 | nSettings | `uint32` |  |  |
 | type | `uint32` |  |  |
-| volumeLine | `int32` | `version >= 0x3` |  |
+| volumeLine | `int32` | `version >= 0x2` |  |
 | settings | [`Pair`](../base.md#pair-structure)<[`Context`](#context-structure), [`snd::Setting`](./snd-setting.md)>[`nSettings`] |  |  |
 
 ### `Context` structure
