@@ -47,55 +47,55 @@ void EncryptedString::Swizzle() {
 
 Sometimes referred to as `vec2`.
 
-| Name | Type | Description |
-| :-- | :-- | --- |
-| x | `float32` |  |
-| y | `float32` |  |
+| Name | Type |
+| :-- | :-- |
+| x | `float32` |
+| y | `float32` |
 
 ## `Vector3` structure
 
 Sometimes referred to as `vec3`.
 
-| Name | Type | Description |
-| :-- | :-- | --- |
-| x | `float32` |  |
-| y | `float32` |  |
-| z | `float32` |  |
+| Name | Type |
+| :-- | :-- |
+| x | `float32` |
+| y | `float32` |
+| z | `float32` |
 
 ## `Vector4` / `Quaternion` structure
 
 Sometimes referred to as `vec4` or `quat` respectively.
 
-| Name | Type | Description |
-| :-- | :-- | --- |
-| x | `float32` |  |
-| y | `float32` |  |
-| z | `float32` |  |
-| w | `float32` |  |
+| Name | Type |
+| :-- | :-- |
+| x | `float32` |
+| y | `float32` |
+| z | `float32` |
+| w | `float32` |
 
 ## `Matrix22` structure
 
-| Name | Type | Description |
-| :-- | :-- | --- |
-| x | [`Vector2`](#vector2-structure) |  |
-| y | [`Vector2`](#vector2-structure) |  |
+| Name | Type |
+| :-- | :-- |
+| x | [`Vector2`](#vector2-structure) |
+| y | [`Vector2`](#vector2-structure) |
 
 ## `Matrix33` structure
 
-| Name | Type | Description |
-| :-- | :-- | --- |
-| x | [`Vector3`](#vector3-structure) |  |
-| y | [`Vector3`](#vector3-structure) |  |
-| z | [`Vector3`](#vector3-structure) |  |
+| Name | Type |
+| :-- | :-- |
+| x | [`Vector3`](#vector3-structure) |
+| y | [`Vector3`](#vector3-structure) |
+| z | [`Vector3`](#vector3-structure) |
 
 ## `Matrix44` structure
 
-| Name | Type | Description |
-| :-- | :-- | --- |
-| x | [`Vector4`](#vector4-quaternion-structure) |  |
-| y | [`Vector4`](#vector4-quaternion-structure) |  |
-| z | [`Vector4`](#vector4-quaternion-structure) |  |
-| w | [`Vector4`](#vector4-quaternion-structure) |  |
+| Name | Type |
+| :-- | :-- |
+| x | [`Vector4`](#vector4-quaternion-structure) |
+| y | [`Vector4`](#vector4-quaternion-structure) |
+| z | [`Vector4`](#vector4-quaternion-structure) |
+| w | [`Vector4`](#vector4-quaternion-structure) |
 
 ## `Color` structure
 
@@ -108,10 +108,10 @@ Sometimes referred to as `vec4` or `quat` respectively.
 
 ## `Box` structure
 
-| Name | Type | Description |
-| :-- | :-- | --- |
-| pMin | [`Vector3`](#vector3-structure) |  |
-| pMax | [`Vector3`](#vector3-structure) |  |
+| Name | Type |
+| :-- | :-- |
+| pMin | [`Vector3`](#vector3-structure) |
+| pMax | [`Vector3`](#vector3-structure) |
 
 ## `Array`<`Type`> structure {#array-structure}
 
@@ -136,11 +136,11 @@ Sometimes referred to as `vec4` or `quat` respectively.
 
 ## `CompressedQuaternion3U16` structure
 
-| Name | Type | Description |
-| :-- | :-- | --- |
-| x | `uint16` |  |
-| y | `uint16` |  |
-| z | `uint16` |  |
+| Name | Type |
+| :-- | :-- |
+| x | `uint16` |
+| y | `uint16` |
+| z | `uint16` |
 
 Compression/decompression:
 
