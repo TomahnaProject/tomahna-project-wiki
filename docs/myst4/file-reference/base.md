@@ -113,6 +113,13 @@ Sometimes referred to as `vec4` or `quat` respectively.
 | pMin | [`Vector3`](#vector3-structure) |
 | pMax | [`Vector3`](#vector3-structure) |
 
+## `Plane` structure
+
+| Name | Type |
+| :-- | :-- |
+| normal | [`Vector3`](#vector3-structure) |
+| constant | `float32` |
+
 ## `Array`<`Type`> structure {#array-structure}
 
 | Name | Type | Description |
