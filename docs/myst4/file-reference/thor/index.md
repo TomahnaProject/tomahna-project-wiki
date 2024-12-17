@@ -51,7 +51,7 @@ This enum value table might not be complete!
 | `GraphicOverlay` | `0x1A` |  |
 | `PanelResource` | `0x1B` |  |
 | `AnimPanelResource` | `0x1C` |  |
-| `ParticleSystemBase` | `0x1D` |  |
+| [`ParticleSystemBase`](./particlesystembase.md) | `0x1D` |  |
 | `PixelEffectResource` | `0x1E` |  |
 | [`RailResource`](./railresource.md) | `0x1F` |  |
 | `SkyReflectionResource` | `0x21` |  |
